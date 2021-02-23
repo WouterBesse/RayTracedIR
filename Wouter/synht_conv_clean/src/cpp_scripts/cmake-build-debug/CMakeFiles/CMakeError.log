@@ -1,0 +1,32 @@
+Performing C++ SOURCE FILE Test has_std_11_flag failed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_bde4a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.24.28315 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /I"H:\Desktop\Music Projects\School\Jaar 2\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D has_std_11_flag /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_bde4a.dir\Debug\\" /Fd"cmTC_bde4a.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue  -std=c++11 "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line warning D9002: ignoring unknown option '-std=c++11' [H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_bde4a.vcxproj]
+  cmTC_bde4a.vcxproj -> H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\Debug\cmTC_bde4a.exe
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test has_std_0x_flag failed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f609c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.24.28315 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  src.cxx
+  cl /c /I"H:\Desktop\Music Projects\School\Jaar 2\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D has_std_0x_flag /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f609c.dir\Debug\\" /Fd"cmTC_f609c.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue  -std=c++0x "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\src.cxx"
+cl : command line warning D9002: ignoring unknown option '-std=c++0x' [H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_f609c.vcxproj]
+  cmTC_f609c.vcxproj -> H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\CMakeTmp\Debug\cmTC_f609c.exe
+
+
+Source file was:
+int main() { return 0; }
