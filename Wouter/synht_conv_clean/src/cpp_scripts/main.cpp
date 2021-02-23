@@ -61,7 +61,8 @@ struct TestCallback : public AudioIODeviceCallback {
            // output[i] = 0.5 * distribution(device);
         }
     }
-  
+
+  //Initiate all values
   Convolution verb;
   int samplerate = 0;
   float amp = 0.1;
@@ -84,6 +85,7 @@ struct TestCallback : public AudioIODeviceCallback {
 
 int main(int argc, char* argv[]) {
 
+  //Initialiseer Vector met Impulse Response Samples
   auto path = std::string { argv[1] };
 
   std::vector<float> ImpulseVector {};
@@ -95,7 +97,7 @@ int main(int argc, char* argv[]) {
     ImpulseVector.push_back(std::stof(line));
   }
 
-
+  // Portaudio Sessie wordt gestart (beetje alsof de Jack sessie wordt gestart)
   TestCallback callback { std::move(ImpulseVector) };
   Port_Audio portAudio { callback };
 
@@ -107,38 +109,6 @@ int main(int argc, char* argv[]) {
       std::cerr << "error during startup: " << e.what() << std::endl;
   }
 
-  // Create Impulse Response Vector from csv file
-
-  // Define all initial values
-  
-  //;
-
-  
-  
-
-  
-
-    
-
-  //   for(unsigned int i = 0; i < nframes; i++) {
-  //     x += 1;
-  //     if (x % hs == 0) {
-  //       // Sets the current frequency to the one stored in the melody vector and saves it to a store vector
-  //       freq = mel.at(melnum);
-  //       store.push_back (freq);
-  //       melnum ++;
-  //       if(melnum > 6) melnum = 0;
-  //     }
-  //     if (syntyp == 0) {
-  //       outBuf[i] = synthesizer.getSValAdd(freq);
-  //     } else if (syntyp == 1) {
-  //       outBuf[i] = synthesizer.getSValMult(freq);
-  //     } else {
-  //       outBuf[i] = (synthesizer.getSValMult(freq) + synthesizer.getSValAdd(freq)) / 2;
-  //     }
-  //   }
-  //   return 0;
-  // };
 
 
   //keep the program running and listen for user input, q = quit
@@ -178,7 +148,7 @@ int main(int argc, char* argv[]) {
         break;
       case 'h':
         std::cout << "Hello, you can type a key to execute it's funtion, the following keys are possible: \n";
-        std::cout << "m - See synthesizer values \n";
+        std::cout << "p - See synthesizer values \n";
         std::cout << "m - Generate new melody \n";
         std::cout << "r - Set synthesizer to ring modulation \n";
         std::cout << "a - Set synthesizer to adding the waves \n";
