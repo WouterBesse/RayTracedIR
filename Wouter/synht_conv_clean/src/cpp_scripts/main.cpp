@@ -103,7 +103,7 @@ int main(int argc, char* argv[]) {
 
 
   try {
-      portAudio.setup(8000, 1024);
+      portAudio.setup(8000, 8);
   }
   catch (std::runtime_error& e) {
       std::cerr << "error during startup: " << e.what() << std::endl;

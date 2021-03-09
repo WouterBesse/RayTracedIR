@@ -5,7 +5,7 @@ Convolution::Convolution(std::vector<float> IRP){
   ImpulseResponse = IRP;
   SampleLength = IRP.size();
   Counter = 0;
-  Convs.reserve(SampleLength);
+  Convs.reserve(SampleLength + 1);
 }
 
 Convolution::~Convolution() {
