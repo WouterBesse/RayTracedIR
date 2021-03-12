@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c12d9706879479f512724e1f55499384\port_audio-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\3530be69d83791c4c7dc5798291f652e\port_audio-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\c4ccebd3250d2508c58ce90d4433635d\port_audio-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-subbuild\CMakeFiles\port_audio-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8ECD58F2-A8FF-3132-BC26-D9DC757B0987}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

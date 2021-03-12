@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4BBD996E-4D9B-3296-B710-F245624A2804}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>fmtlib-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\fmtlib-populate-gitinfo.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (git clone) for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\fmtlib-populate-gitinfo.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (git clone) for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\fmtlib-populate-gitinfo.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (git clone) for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitclone.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\fmtlib-populate-gitinfo.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing update step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing update step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing update step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -P "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/tmp/fmtlib-populate-gitupdate.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\05f1a897f97879208f62d86c921d785a\fmtlib-populate-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build"
+if %errorlevel% neq 0 goto :cmEnd
+H:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-test"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\1247a9a585fa80f54eea8ccc2a93f841\fmtlib-populate-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)/fmtlib-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)/fmtlib-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)/fmtlib-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'fmtlib-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E make_directory "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/$(Configuration)/fmtlib-populate-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E touch "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/fmtlib-populate-prefix/src/fmtlib-populate-stamp/$(Configuration)/fmtlib-populate-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-install;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-mkdir;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-download;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-update;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-patch;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-configure;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-build;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\src\fmtlib-populate-stamp\$(Configuration)\fmtlib-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\c1fbf791ee090fdc64b966343945c28d\fmtlib-populate.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\fmtlib-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\fmtlib-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\fmtlib-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\$(Configuration)\fmtlib-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\fmtlib-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\RepositoryInfo.txt.in;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\3.17.5\CMakeSystem.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\RepositoryInfo.txt.in;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\3.17.5\CMakeSystem.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\RepositoryInfo.txt.in;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\3.17.5\CMakeSystem.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_sse/src/cpp_scripts/cmake-build-debug/_deps/fmtlib-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeDetermineSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystem.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\ExternalProject.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindGit.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\RepositoryInfo.txt.in;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\3.17.5\CMakeSystem.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\fmtlib-populate-prefix\tmp\fmtlib-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\CMakeFiles\fmtlib-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{895D4C24-75B1-32B0-94A6-91C8E2FCE030}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

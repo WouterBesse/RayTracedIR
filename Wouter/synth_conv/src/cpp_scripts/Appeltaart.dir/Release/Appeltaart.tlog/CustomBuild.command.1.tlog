@@ -1,0 +1,10 @@
+^H:\DESKTOP\MUSIC PROJECTS\SCHOOL\JAAR 2\RAYTRACEDIR\RAYTRACEDIR\WOUTER\SYNTH_CONV\SRC\CPP_SCRIPTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

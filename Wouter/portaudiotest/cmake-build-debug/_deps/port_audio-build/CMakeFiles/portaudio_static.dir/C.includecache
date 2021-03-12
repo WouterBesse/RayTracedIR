@@ -1,0 +1,604 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_allocation.c
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_allocation.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_allocation.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_converters.c
+pa_converters.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_converters.h
+pa_dither.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_dither.h
+pa_endianness.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_endianness.h
+pa_types.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_types.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_converters.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_cpuload.c
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_cpuload.h
+assert.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_cpuload.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_debugprint.c
+stdio.h
+-
+stdarg.h
+-
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_debugprint.h
+windows.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/windows.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_debugprint.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_dither.c
+pa_types.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_types.h
+pa_dither.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_dither.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_dither.h
+pa_types.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_types.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_endianness.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_front.c
+stdio.h
+-
+memory.h
+-
+string.h
+-
+stdlib.h
+-
+assert.h
+-
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+pa_endianness.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_endianness.h
+pa_types.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_types.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_stream.h
+pa_trace.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_trace.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_debugprint.h
+pa_gitrevision.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_gitrevision.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_gitrevision.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_hostapi.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_memorybarrier.h
+libkern/OSAtomic.h
+-
+intrin.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_process.c
+assert.h
+-
+string.h
+-
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_process.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_process.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+pa_converters.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_converters.h
+pa_dither.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_dither.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_ringbuffer.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+pa_ringbuffer.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_ringbuffer.h
+string.h
+-
+pa_memorybarrier.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_memorybarrier.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_ringbuffer.h
+sys/types.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_stream.c
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_stream.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_stream.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_trace.c
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+string.h
+-
+assert.h
+-
+pa_trace.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_trace.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_debugprint.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_trace.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_types.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/pa_util.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/common/portaudio.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds.c
+assert.h
+-
+stdio.h
+-
+string.h
+-
+initguid.h
+-
+windows.h
+-
+objbase.h
+-
+dsound.h
+-
+dsconf.h
+-
+process.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_util.h
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_allocation.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_stream.h
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_cpuload.h
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_process.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_debugprint.h
+pa_win_ds.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds.h
+pa_win_ds_dynlink.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds_dynlink.h
+pa_win_waveformat.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_waveformat.h
+pa_win_wdmks_utils.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_wdmks_utils.h
+pa_win_coinitialize.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_coinitialize.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds_dynlink.c
+pa_win_ds_dynlink.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds_dynlink.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_debugprint.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/dsound/pa_win_ds_dynlink.h
+dsound.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_hostapi_skeleton.c
+string.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_util.h
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_allocation.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_stream.h
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_cpuload.h
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/skeleton/pa_process.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ks.h
+pshpack1.h
+-
+poppack.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ksmedia.h
+ks.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ks.h
+pshpack1.h
+-
+poppack.h
+-
+pshpack1.h
+-
+poppack.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_win_wasapi.c
+windows.h
+-
+stdio.h
+-
+process.h
+-
+assert.h
+-
+mmreg.h
+-
+avrt.h
+-
+audioclient.h
+-
+endpointvolume.h
+-
+functiondiscoverykeys_devpkey.h
+-
+functiondiscoverykeys.h
+-
+mmdeviceapi.h
+-
+devicetopology.h
+-
+malloc.h
+-
+memory.h
+-
+mmsystem.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_util.h
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_allocation.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_stream.h
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_cpuload.h
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_process.h
+pa_win_wasapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_win_wasapi.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_debugprint.h
+pa_ringbuffer.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_ringbuffer.h
+pa_win_coinitialize.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/pa_win_coinitialize.h
+basetyps.h
+-
+rpcsal.h
+-
+sal.h
+-
+wtypes.h
+-
+oleidl.h
+-
+objidl.h
+-
+sdkddkver.h
+-
+propkeydef.h
+-
+audioclient.h
+-
+mmdeviceapi.h
+-
+endpointvolume.h
+-
+functiondiscoverykeys.h
+-
+devicetopology.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_win_wdmks.c
+stdio.h
+-
+initguid.h
+-
+string.h
+-
+assert.h
+-
+wchar.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_util.h
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_allocation.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_stream.h
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_cpuload.h
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_process.h
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/portaudio.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_debugprint.h
+pa_memorybarrier.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_memorybarrier.h
+pa_ringbuffer.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_ringbuffer.h
+pa_trace.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_trace.h
+pa_win_waveformat.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_win_waveformat.h
+pa_win_wdmks.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wdmks/pa_win_wdmks.h
+windows.h
+-
+winioctl.h
+-
+process.h
+-
+math.h
+-
+setupapi.h
+-
+../wasapi/mingw-include/ks.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ks.h
+../wasapi/mingw-include/ksmedia.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ksmedia.h
+mmreg.h
+-
+ks.h
+-
+ksmedia.h
+-
+assert.h
+-
+stdio.h
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_win_wmme.c
+stdio.h
+-
+stdlib.h
+-
+limits.h
+-
+math.h
+-
+windows.h
+-
+mmsystem.h
+-
+process.h
+-
+assert.h
+-
+malloc.h
+-
+memory.h
+-
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/portaudio.h
+pa_trace.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_trace.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_util.h
+pa_allocation.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_allocation.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_hostapi.h
+pa_stream.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_stream.h
+pa_cpuload.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_cpuload.h
+pa_process.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_process.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_debugprint.h
+pa_win_wmme.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_win_wmme.h
+pa_win_waveformat.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_win_waveformat.h
+pa_win_wdmks_utils.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wmme/pa_win_wdmks_utils.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_coinitialize.c
+windows.h
+-
+objbase.h
+-
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/portaudio.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_util.h
+pa_debugprint.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_debugprint.h
+pa_win_coinitialize.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_coinitialize.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_coinitialize.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_hostapis.c
+options_cmake.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/options_cmake.h
+pa_hostapi.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_hostapi.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_util.c
+windows.h
+-
+sys/timeb.h
+-
+mmsystem.h
+-
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_util.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_waveformat.c
+windows.h
+-
+mmsystem.h
+-
+mmreg.h
+-
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/portaudio.h
+pa_win_waveformat.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_waveformat.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_wdmks_utils.c
+windows.h
+-
+mmreg.h
+-
+winioctl.h
+-
+../../hostapi/wasapi/mingw-include/ks.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ks.h
+../../hostapi/wasapi/mingw-include/ksmedia.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/hostapi/wasapi/mingw-include/ksmedia.h
+ks.h
+-
+ksmedia.h
+-
+stdio.h
+-
+portaudio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/portaudio.h
+pa_util.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_util.h
+pa_win_wdmks_utils.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_wdmks_utils.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-src/src/os/win/pa_win_wdmks_utils.h
+
+_deps/port_audio-build/options_cmake.h
+options_cmake.h
+_deps/port_audio-build/options_cmake.h
+
+_deps/port_audio-src/include/pa_win_ds.h
+portaudio.h
+_deps/port_audio-src/include/portaudio.h
+pa_win_waveformat.h
+_deps/port_audio-src/include/pa_win_waveformat.h
+
+_deps/port_audio-src/include/pa_win_wasapi.h
+portaudio.h
+_deps/port_audio-src/include/portaudio.h
+pa_win_waveformat.h
+_deps/port_audio-src/include/pa_win_waveformat.h
+
+_deps/port_audio-src/include/pa_win_waveformat.h
+
+_deps/port_audio-src/include/pa_win_wdmks.h
+portaudio.h
+_deps/port_audio-src/include/portaudio.h
+windows.h
+-
+
+_deps/port_audio-src/include/pa_win_wmme.h
+portaudio.h
+_deps/port_audio-src/include/portaudio.h
+pa_win_waveformat.h
+_deps/port_audio-src/include/pa_win_waveformat.h
+
+_deps/port_audio-src/include/portaudio.h
+
+_deps/port_audio-src/src/common/pa_allocation.h
+
+_deps/port_audio-src/src/common/pa_converters.h
+portaudio.h
+_deps/port_audio-src/src/common/portaudio.h
+
+_deps/port_audio-src/src/common/pa_cpuload.h
+
+_deps/port_audio-src/src/common/pa_debugprint.h
+
+_deps/port_audio-src/src/common/pa_dither.h
+pa_types.h
+_deps/port_audio-src/src/common/pa_types.h
+
+_deps/port_audio-src/src/common/pa_hostapi.h
+portaudio.h
+_deps/port_audio-src/src/common/portaudio.h
+
+_deps/port_audio-src/src/common/pa_memorybarrier.h
+libkern/OSAtomic.h
+-
+intrin.h
+-
+
+_deps/port_audio-src/src/common/pa_process.h
+portaudio.h
+_deps/port_audio-src/src/common/portaudio.h
+pa_converters.h
+_deps/port_audio-src/src/common/pa_converters.h
+pa_dither.h
+_deps/port_audio-src/src/common/pa_dither.h
+
+_deps/port_audio-src/src/common/pa_ringbuffer.h
+sys/types.h
+-
+
+_deps/port_audio-src/src/common/pa_stream.h
+portaudio.h
+_deps/port_audio-src/src/common/portaudio.h
+
+_deps/port_audio-src/src/common/pa_trace.h
+
+_deps/port_audio-src/src/common/pa_types.h
+
+_deps/port_audio-src/src/common/pa_util.h
+portaudio.h
+_deps/port_audio-src/src/common/portaudio.h
+
+_deps/port_audio-src/src/os/win/pa_win_coinitialize.h
+
+_deps/port_audio-src/src/os/win/pa_win_wdmks_utils.h
+

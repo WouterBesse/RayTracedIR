@@ -1,0 +1,6 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\portaudiotest"
+-- Could NOT find ASIOSDK (missing: ASIOSDK_ROOT_DIR ASIOSDK_INCLUDE_DIR) 
+-- DirectSound support will be built with DSound provided by MinGW.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug
