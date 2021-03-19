@@ -1,27 +1,10 @@
 "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -G "Visual Studio 16 2019" "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts"
 -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.18363.
-CMake Error at CMakeLists.txt:2 (project):
-  The CMAKE_C_COMPILER:
-
-    C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe
-
-  is not a full path to an existing compiler tool.
-
-
-
-CMake Error at CMakeLists.txt:2 (project):
-  The CMAKE_CXX_COMPILER:
-
-    C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx64/x64/cl.exe
-
-  is not a full path to an existing compiler tool.
-
-
-
--- Configuring incomplete, errors occurred!
-See also "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/CMakeError.log".
-
-Cannot get compiler information:
-	Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\Hostx64\x64\cl.exe" (in directory "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug"): CreateProcess error=2, The system cannot find the file specified
-	Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\Hostx64\x64\cl.exe" (in directory "H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-build"): CreateProcess error=2, The system cannot find the file specified
+-- Could NOT find ASIOSDK (missing: ASIOSDK_ROOT_DIR ASIOSDK_INCLUDE_DIR) 
+-- Version: 7.1.3
+-- Build type: 
+-- CXX_STANDARD: 11
+-- Required features: cxx_variadic_templates
+-- Configuring done
+-- Generating done
+-- Build files have been written to: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug

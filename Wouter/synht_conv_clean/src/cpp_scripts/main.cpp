@@ -1,17 +1,12 @@
 #include <iostream>
-#include <thread>
-//#include "../headers/jack_module.h"
 #include "../headers/synth.h"
 #include "../headers/csv.h" // Got csv parser from https://github.com/ben-strasser/fast-cpp-csv-parser
 #include "../headers/convolution.h"
 #include "../headers/port_audio.h"
 #include <limits>
 #include <fstream>
-#include <string>
 #include <iterator>
 #include <math.h>
-#include <list>
-#include <string>
 #include <vector>
 #ifndef M_PI
     #define M_PI 3.14159265358979323846
@@ -30,7 +25,7 @@ struct TestCallback : public AudioIODeviceCallback {
     }
 
     void process(float* input, float* output, int numSamples, int numChannels) override {
-        int hs = samplerate / 2;
+        int hs = samplerate;
         for (auto i = 0; i < numSamples * 2; ++i) {
           x += 1;
           if (x % hs == 0) {
@@ -40,14 +35,15 @@ struct TestCallback : public AudioIODeviceCallback {
             melnum++;
             if(melnum > 6) melnum = 0;
           }
+
             //std::cout << synthesizer.getSValAdd(freq);
             float newout = synthesizer.getSValAdd(freq * 2);
             //std::cout << newout << "Synth Out\n";
-            float verby = + verb.getSamp(newout) / 8;
+            float verby = + verb.getSamp(newout) * 0.5;
             //std::cout << verby << "Verb out \n";
             float combi = newout + verby;
             //std::cout << combi << "combi out\n";
-            output[i] = combi / 2;
+            output[i] = verby;
             //output[i] = newout;
 
            // output[i] = 0.5 * distribution(device);
@@ -96,7 +92,7 @@ int main(int argc, char* argv[]) {
 
 
   try {
-      portAudio.setup(2000, 8);
+      portAudio.setup(3000, 16);
   }
   catch (std::runtime_error& e) {
       std::cerr << "error during startup: " << e.what() << std::endl;
