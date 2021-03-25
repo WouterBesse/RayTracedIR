@@ -26,6 +26,7 @@ struct Vector
 	virtual ~Vector();
 
 	inline float length2();
+    inline float kaazig();
 	inline float length();
 
 	float normalize();

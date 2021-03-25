@@ -84,6 +84,12 @@ float Plane::getSX() {
 bool Plane::inBounds(Intersection& intersection) {
   intersection.setPointOfIntersect();
   Point intPoint = intersection.ray.pointOfIntersect;
+  //std::cout << pointInTriangle(intPoint, vertA, vertB, vertC) << "\n";
+  int pizza = pointInTriangle(intPoint, vertA, vertB, vertC);
+  if (pizza == 1){
+//      std::cout << kaazig(vertA) << "  " << kaazig[vertB] << "  " << vertC[0] << "\n";
+//std::cout << "x: " << intPoint.x << ",  " << "y: " << intPoint.y << ",  z: " << intPoint.z << " \n";
+  }
   return pointInTriangle(intPoint, vertA, vertB, vertC);
 }
 /*
