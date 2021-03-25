@@ -33,10 +33,12 @@ double ringBuffer::getSamples(int iDelays[],float fVolumes[])
 {
   out = 0.0;
   int size = 1000;
-  for (int i = 0; i <= size ; i++)
-  {
-    out += fVolumes[i]*ringBuf[(iRingBuf + length - iDelays[i] % length) % length];
-  }
+    for (int i = 0; i <= size ; i++)
+    {
+      out += fVolumes[i]*ringBuf[(iRingBuf + length - iDelays[i+(i%2)+(iRingBuf%2)] % length) % length];
+      //std::cout<<i;
+    }
+
 
   return out;
 }

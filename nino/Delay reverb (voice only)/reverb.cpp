@@ -15,29 +15,28 @@
 #include "ringbuffer.h"
 
 
-int iDelays[1000];
-float fVolumes[1000];
+
+const int numberOfDelays = 11000;
+int randList[numberOfDelays];
+int iDelays[numberOfDelays];
+float fVolumes[numberOfDelays];
 double delaymultiplier = 0.1;
+double j = 1.0;
+double delayVal = 2.0;
 
 
-
-int main(int argc,char **argv)
+int reverb(int argc,char **argv)
 {
-  double j = 1.0;
-  double delayVal = 2.0;
-  for(int i = 0; i < 300; i++)
-  {
-    iDelays[i] = delayVal;
-    delayVal += (rand() % 5 + 30) * i * delaymultiplier;
-    fVolumes[i] = j;
-    j = j * 0.94;
-  }
-  fVolumes[0] = 1.0;
-    // for(int i = 0; i < 500; i++){
-    //   iDelays[i] = 100000 - (iDelays[i] % 100000);
-    // }
-    std::cout<<delaymultiplier;
 
+  for(int i = 0; i < numberOfDelays; i++)
+  {
+    randList[i] = rand() % 10 + 2;
+    delayVal += randList[i] * i * delaymultiplier;
+    iDelays[i] = delayVal;
+    fVolumes[i] = j;
+    j = j * 0.97;
+  }
+  //fVolumes[0] = 1.0;
 
   // create a JackModule instance
   JackModule jack;
@@ -46,14 +45,8 @@ int main(int argc,char **argv)
   jack.init("example.exe");
   double samplerate = jack.getSamplerate();
 
-
-
-
   //ringbuffer
   ringBuffer ringbuffer1(500000);
-
-
-
 
   double CurrentTimeS = 0.0;  //init start time in seconds
   int CurrentSamp = 0;//declare the first sample
@@ -61,11 +54,14 @@ int main(int argc,char **argv)
   //wat leuke text en info:
   std::cout << std::endl;
   std::cout << "\n\nPress 'q' when you want to quit the program."<<std::endl;
+  std::cout << "\n\nPress '1' to increase length."<<std::endl;
+    std::cout << "\n\nPress '2' to decrease length."<<std::endl;
 
-
+ double SingleSample = 0.0;
   //assign a function to the JackModule::onProces
-  jack.onProcess = [&ringbuffer1, &samplerate, &CurrentTimeS, &CurrentSamp](jack_default_audio_sample_t *inBuf,
-     jack_default_audio_sample_t *outBuf, jack_nframes_t nframes) {
+  jack.onProcess = [&ringbuffer1, &samplerate, &CurrentTimeS, &CurrentSamp, &SingleSample](jack_default_audio_sample_t *inBuf,
+     jack_default_audio_sample_t *outBufL, jack_default_audio_sample_t *outBufR, jack_nframes_t nframes) {
+
 
     for(unsigned int i=0;i<nframes;i++)
     {
@@ -73,7 +69,19 @@ int main(int argc,char **argv)
       (0.1 * inBuf[i]);
       CurrentSamp += 1;
       CurrentTimeS = CurrentSamp / samplerate;
-      outBuf[i] = ringbuffer1.getSamples(iDelays,fVolumes);
+      SingleSample = ringbuffer1.getSamples(iDelays,fVolumes);
+      if(i % 2 == 0)
+      {
+        outBufL[i] = SingleSample;
+
+      }
+      else
+      {
+        outBufR[i] = SingleSample;
+
+      }
+
+
     }
     return 0;
   };
@@ -91,25 +99,35 @@ int main(int argc,char **argv)
     //live keyboard in
     bKeyPressed = false;
     //quit the program
+    double lastDelayMultiplier;
     if (GetAsyncKeyState('Q') & 0x8000)
     {
       running = false;
       jack.end();
       break;
     }
-    if (GetAsyncKeyState('1') & 0x8000)
+    else if (GetAsyncKeyState('1') & 0x8000)
     {
       delaymultiplier += 0.0001;
+    }
+    else if (GetAsyncKeyState('2') & 0x8000)
+    {
+      delaymultiplier -= 0.0001;
+    }
+    else if (delaymultiplier != lastDelayMultiplier)
+    {
       double j = 1.0;
       double delayVal = 2.0;
-
-      for(int i = 0; i < 1000; i++)
+      for(int i = 0; i < numberOfDelays; i++)
       {
         iDelays[i] = delayVal;
-        delayVal += (rand() % 10 + 2) * i * delaymultiplier;
+        delayVal += randList[i] * i * delaymultiplier;
         fVolumes[i] = j;
         j = j * 0.97;
+        //std::cout<<j;
       }
+      //std::cout<<iDelays[100];
+      lastDelayMultiplier = delaymultiplier;
     }
 
 
@@ -129,3 +147,8 @@ int main(int argc,char **argv)
   //end the program
   return 0;
 } // main()
+
+int main(int argc,char **argv)
+{
+  reverb(argc,argv);
+}

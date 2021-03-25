@@ -7,6 +7,8 @@
 
 #ifndef _JACK_MODULE_H_
 #define _JACK_MODULE_H_
+#define DELAY_SIZE 44100
+#define PI_2 6.28318530717959
 
 #include <string>
 #include <functional>
@@ -24,7 +26,8 @@ public:
   void end();
   //the onProcess function that needs to be assigned to a JackModule object
   std::function <int(jack_default_audio_sample_t *,
-     jack_default_audio_sample_t *, jack_nframes_t)> onProcess;
+     jack_default_audio_sample_t *,jack_default_audio_sample_t *, jack_nframes_t)> onProcess;
+
 
 private:
   static int _wrap_jack_process_cb(jack_nframes_t nframes,void *arg);
