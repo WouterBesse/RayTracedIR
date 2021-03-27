@@ -5,7 +5,7 @@
 #include "ringbuffer.h"
 
 
-const int numberOfDelays = 11000;
+const int numberOfDelays = 1000;
 int randList[numberOfDelays];
 int iDelays[numberOfDelays];
 float fVolumes[numberOfDelays];
@@ -20,6 +20,8 @@ void SetupAudio(PortAudio &portAudio);
 
 void TeardownAudio(PortAudio &portAudio);
 
+
+int IsKeyPressed(char Key);
 
 struct TestCallback : public AudioIODeviceCallback {
 
@@ -64,12 +66,12 @@ int main() {
         // live keyboard in
         // quit the program
         int lastDelayMultiplier = 0;
-        if (GetAsyncKeyState('Q') & 0x8000) {
+        if (IsKeyPressed('Q')) {
             TeardownAudio(portAudio);
             break;
-        } else if (GetAsyncKeyState('1') & 0x8000) {
+        } else if (IsKeyPressed('1')) {
             DelayMultiplier += 0.0001;
-        } else if (GetAsyncKeyState('2') & 0x8000) {
+        } else if (IsKeyPressed('2')) {
             DelayMultiplier -= 0.0001;
         } else if (DelayMultiplier != lastDelayMultiplier) {
             delayVal = 2.0;
@@ -79,6 +81,8 @@ int main() {
     //end the program
     return 0;
 }
+
+int IsKeyPressed(char Key) { return GetAsyncKeyState(Key) & 0x8000; }
 
 void TeardownAudio(PortAudio &portAudio) {
     try {
