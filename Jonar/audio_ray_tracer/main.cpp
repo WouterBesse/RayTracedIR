@@ -6,8 +6,8 @@
 #include <fstream>
 #include <cstdio>
 
-#define SCREEN_WIDTH 2
-#define SCREEN_HEIGHT 2
+#define SCREEN_WIDTH 1920
+#define SCREEN_HEIGHT 1080
 
 
 struct TracedRay {
@@ -16,6 +16,7 @@ struct TracedRay {
   bool rayIntersected;
   bool rayInBounds;
   float interDistance;
+  Point pointOfIntersect;
 };
 
 void rayTrace(Camera* camera, ShapeSet* scene) {
@@ -27,10 +28,8 @@ int height = SCREEN_HEIGHT;
 
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
-      //  std::cout << "x: " << x << " y: " << y << "\n";
       Vector2 screenCoord((2.0f*x) / width - 1.0f,
       (-2.0f*y) / height + 1.0f);
-      std::cout << "screen u: " << screenCoord.u << ",  screen v: " << screenCoord.v << "\n";
       Ray ray = camera->makeRay(screenCoord);
 
       Intersection intersection(ray);
@@ -40,7 +39,7 @@ int height = SCREEN_HEIGHT;
         tracedRay.rayIntersected = true;
         tracedRay.rayInBounds = true;
         tracedRay.interDistance = intersection.t;
-        //kaas = intersection.pointOfIntersect;
+        tracedRay.pointOfIntersect = intersection.pointOfIntersect;
         tracedRays.push_back(tracedRay);
       } else {
         tracedRay.x = x;
@@ -60,41 +59,62 @@ int height = SCREEN_HEIGHT;
   }
 */
 
-std::ofstream intersectionData;
-intersectionData.open("intersectionData.txt");
+std::ofstream debugData;
+debugData.open("debugData.txt");
 
-for (size_t i = 0; i < tracedRays.size(); i++) {
+for (int i = 0; i < tracedRays.size(); i++) {
   if (tracedRays[i].rayInBounds != 0) {
-  intersectionData << "x: " << tracedRays[i].x << '\t';
-  intersectionData << "y: " << tracedRays[i].y << '\t';
+  debugData << "x: " << tracedRays[i].x << '\t';
+  debugData << "y: " << tracedRays[i].y << '\t';
   //intersectionData << "intSct: " << tracedRays[i].rayIntersected << '\t';
-  intersectionData << "inBounds: " << tracedRays[i].rayInBounds << '\t';
-  intersectionData << "intDst: " << tracedRays[i].interDistance << '\n';
+  debugData << "inBounds: " << tracedRays[i].rayInBounds << '\t';
+  debugData << "intDst: " << tracedRays[i].interDistance << '\t';
+  debugData << "pointOfIntersectXYZ: " << '\t' <<
+  tracedRays[i].pointOfIntersect.x << " " <<
+  tracedRays[i].pointOfIntersect.y << " " <<
+  tracedRays[i].pointOfIntersect.z << '\n';
 }
 }
-intersectionData.close();
-std::cout << "---intersectionData.txt file written---" << '\n';
+debugData.close();
+std::cout << "---debugData.txt file written---" << '\n';
 
+std::ofstream intersectionDataN;
+intersectionDataN.open("intersectionDataN.txt");
+
+for (int i = 0; i < tracedRays.size(); i++) {
+  if (tracedRays[i].rayInBounds != 0) {
+  intersectionDataN << tracedRays[i].interDistance << '\n';
+}
+}
+
+intersectionDataN.close();
+std::cout << "---intersectionDataN.txt file written---" << '\n';
+
+std::ofstream intersectionDataC;
+intersectionDataC.open("intersectionDataC.txt");
+
+for (int i = 0; i < tracedRays.size(); i++) {
+  if (tracedRays[i].rayInBounds != 0) {
+  intersectionDataC << tracedRays[i].interDistance << ", ";
+}
+}
+
+intersectionDataC.close();
+std::cout << "---intersectionDataC.txt file written---" << '\n';
 
 // ---make image file---
 
-  int tempImage[width][height];
-    std::cout << "Image Made ";
+  int tempImage[height][width];
   int temp = 0;
-
   int xPixel = 0;
   int yPixel = 0;
 
-
-  for (size_t i = 0; i < tracedRays.size(); i++) {
+  for (int i = 0; i < tracedRays.size(); i++) {
     if (tracedRays[i].rayInBounds != 0) {
-      //  std::cout << "Ray " << i << "= x: " << tracedRays[i].x << ", y: " << tracedRays[i].y << "\n";
       xPixel = tracedRays[i].x;
       yPixel = tracedRays[i].y;
-      float color = tracedRays[i].interDistance * 120 - 100;
       tempImage[yPixel][xPixel] = 0;
     } else {
-       // std::cout << "Ray " << i << "= x: " << tracedRays[i].x << ", y: " << tracedRays[i].y << "\n";
       xPixel = tracedRays[i].x;
       //std::cout << "xPixel: " << xPixel << '\n';
       yPixel = tracedRays[i].y;
@@ -149,7 +169,7 @@ std::cout << "---intersectionData.txt file written---" << '\n';
     fprintf(pgmimg, "\n");
   }
   fclose(pgmimg);
-
+  std::cout << "---pgmimg.pgm file written---" << '\n';
 }
 
 int main(int argc, char *argv[]) {
@@ -159,11 +179,22 @@ int main(int argc, char *argv[]) {
   //int pixelCount = width * height;
 
   PerspectiveCamera camera(Point(0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 1.0f),
-  Vector(), 80.0f * PI / 180.0f, (float)width / (float)height);
+  Vector(), 25.0f * PI / 180.0f, (float)width / (float)height);
 
   Point coordA;
   Point coordB;
   Point coordC;
+
+  coordA.x = 0.0f;
+  coordA.y = 0.0f;
+  coordA.z = 3.0f;
+  coordB.x = -1.5f;
+  coordB.y = 0.0f;
+  coordB.z = 3.0f;
+  coordC.x = 0.0f;
+  coordC.y = 1.0f;
+  coordC.z = 3.0f;
+
 /*
   coordA.x = 3.0f;
   coordA.y = 0.0f;
@@ -174,50 +205,36 @@ int main(int argc, char *argv[]) {
   coordC.x = 0.0f;
   coordC.y = 12.0f;
   coordC.z = 3.0f;
-*/
 
-//  coordA.x = -2.0f;
-//  coordA.y = 12.0f;
-//  coordA.z = 1.0f;
-//
-//  coordB.x = 2.0f;
-//  coordB.y = 12.0f;
-//  coordB.z = 1.0f;
-//
-//  coordC.x = 2.0f;
-//  coordC.y = 12.0f;
-//  coordC.z = -2.0f;
-
+//diagonale stippen
+  coordA.x = 0.0f;
+  coordA.y = 0.0f;
+  coordA.z = 3.0f;
+  coordB.x = 4.0f;
+  coordB.y = 0.0f;
+  coordB.z = 3.0f;
   coordC.x = 0.0f;
-  coordC.z = -1.0f;
   coordC.y = 4.0f;
-
-  coordB.x = 0.0f;
-  coordB.z = 1.0f;
-  coordB.y = 4.0f;
-
-  coordA.x = 1.0f;
-  coordA.z = 1.0f;
-  coordA.y = 4.0f;
-
+  coordC.z = 3.0f;
+*/
 
 
   ShapeSet scene;
   Plane triangle1(coordA, coordB, coordC);
-
-//  coordA.x = 4.0f;
-//  coordA.y = 4.0f;
-//  coordA.z = 3.0f;
-//  coordB.x = 0.0f;
-//  coordB.y = 4.0f;
-//  coordB.z = 3.0f;
-//  coordC.x = 4.0f;
-//  coordC.y = 0.0f;
-//  coordC.z = 3.0f;
-//  Plane triangle2(coordA, coordB, coordC);
-
+/*
+  coordA.x = 3.0f;
+  coordA.y = 0.0f;
+  coordA.z = 0.0f;
+  coordB.x = 3.0f;
+  coordB.y = 0.0f;
+  coordB.z = 4.0f;
+  coordC.x = 3.0f;
+  coordC.y = 4.0f;
+  coordC.z = 0.0f;
+  Plane triangle2(coordA, coordB, coordC);
+*/
   //Plane floor(Point(0.0f, 0.0f, 0.0f), Vector());
-  scene.addPlane(&triangle1);
+	scene.addPlane(&triangle1);
   //scene.addPlane(&triangle2);
   //std::cout << "scene[0].coordA.y: " << scene.planes[0]->vertA.y << '\n';
 

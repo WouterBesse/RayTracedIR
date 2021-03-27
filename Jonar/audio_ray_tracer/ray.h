@@ -2,6 +2,7 @@
 #define RAY_H
 
 #include "vectormath.h"
+#include "iostream"
 
 // In order to prevent bouncing rays self-intersecting
 #define RAY_T_MIN 0.0001f
@@ -12,7 +13,6 @@
 struct Ray {
 
   Point origin;
-  Point pointOfIntersect;
   Vector direction;
   float tMax;
 
@@ -36,6 +36,7 @@ struct Intersection {
   Ray ray;
   float t;
   Plane *aPlane;
+  Point pointOfIntersect;
 
   Intersection(const Ray& ray);
   virtual ~Intersection();
