@@ -2,28 +2,23 @@
 #include <iostream>
 #include <vector>
 
-class ringBuffer
-{
+class ringBuffer {
 public:
-  ringBuffer(int length);
-  ~ringBuffer();
+    explicit ringBuffer(int length);
 
-  void push(double dInput);
-  double getSample(int iDelay);
-  double getSamples(int iDelays[],float fVolumes[]);
+    ~ringBuffer();
+
+    void push(double dInput);
+
+    double getSamples(int const *iDelays, float const *fVolumes);
 
 protected:
 
-  double dInput;
-  int iDelay;
-  int iDelays;
-  float fVolumes;
-  int iRingBuf = 0; //iteration of the ring buffer
-  double sample;
-  //int ringBuf[0];
-  std::vector<double> ringBuf;
-  int length;
-  double out = 0.0;
+    int iRingBuf = 0; //iteration of the ring buffer
+    double sample{};
+    std::vector<double> ringBuf;
+    int length;
+    double out = 0.0;
 
 
 };
