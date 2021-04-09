@@ -5,7 +5,7 @@
 #include "ringbuffer.h"
 
 
-const int numberOfDelays = 1000;
+const int numberOfDelays = 100;
 int randList[numberOfDelays];
 int iDelays[numberOfDelays];
 float fVolumes[numberOfDelays];
@@ -46,7 +46,7 @@ struct TestCallback : public AudioIODeviceCallback {
 
     //Initiate all values
     //ringbuffer
-    ringBuffer ringbuffer1{500000};
+    ringBuffer ringbuffer1{5000011};
     int SampleRate = 0;
     double CurrentTimeS = 0.0;  //init start time in seconds
 };
@@ -112,7 +112,7 @@ void DisplayHelpInfo() {
 void InitializeDelayList() {
     float j = 1.0;
     for (int i = 0; i < numberOfDelays; i++) {
-        randList[i] = rand() % 10 + 2;
+        randList[i] = 10 + 2;
         delayVal += randList[i] * i * DelayMultiplier;
         iDelays[i] = (int) delayVal;
         fVolumes[i] = j;
