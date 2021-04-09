@@ -1,26 +1,15 @@
-#include <iostream>
-#include <cmath>
-#include <Windows.h>
-#include "../headers/port_audio.h"
+﻿#include <iostream>
+#include "../headers/reverb.h"
 #include "../headers/ringbuffer.h"
 
+void InitializeDelayList();
 
-const int numberOfDelays = 1000;
+const int numberOfDelays = 500;
 int randList[numberOfDelays];
 int iDelays[numberOfDelays];
 float fVolumes[numberOfDelays];
 double DelayMultiplier = 0.1;
 double delayVal = 2.0;
-
-void InitializeDelayList();
-
-void DisplayHelpInfo();
-
-void SetupAudio(PortAudio &portAudio);
-
-void TeardownAudio(PortAudio &portAudio);
-
-int IsKeyPressed(char Key);
 
 struct TestCallback : public AudioIODeviceCallback {
 
@@ -50,8 +39,11 @@ struct TestCallback : public AudioIODeviceCallback {
     double CurrentTimeS = 0.0;  //init start time in seconds
 };
 
+reverb::reverb(){}
 
-int main() {
+reverb::~reverb(){}
+
+int reverb::startVerb() {
     TestCallback callback{};
     PortAudio portAudio{callback};
 
@@ -81,9 +73,9 @@ int main() {
     return 0;
 }
 
-int IsKeyPressed(char Key) { return GetAsyncKeyState(Key) & 0x8000; }
+int reverb::IsKeyPressed(char Key) { return GetAsyncKeyState(Key) & 0x8000; }
 
-void TeardownAudio(PortAudio &portAudio) {
+void reverb::TeardownAudio(PortAudio &portAudio) {
     try {
         portAudio.teardown();
     }
@@ -92,7 +84,7 @@ void TeardownAudio(PortAudio &portAudio) {
     }
 }
 
-void SetupAudio(PortAudio &portAudio) {
+void reverb::SetupAudio(PortAudio &portAudio) {
     try {
         portAudio.setup(44100, 128);
     }
@@ -101,7 +93,7 @@ void SetupAudio(PortAudio &portAudio) {
     }
 }
 
-void DisplayHelpInfo() {
+void reverb::DisplayHelpInfo() {
     std::cout << std::endl;
     std::cout << "\n\nPress 'q' when you want to quit the program." << std::endl;
     std::cout << "\n\nPress '1' to increase length." << std::endl;
