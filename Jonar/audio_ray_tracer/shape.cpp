@@ -18,15 +18,12 @@ bool ShapeSet::intersect(Intersection& intersection) {
   ++iter) {
     Plane *curPlane = *iter;
     if (curPlane->intersect(intersection)) {
-    doesIntersect = true;
-    if (curPlane->inBounds(intersection)) {
-      intInBounds = true;
-    }
+    intInBounds = true;
   }
 }
   return intInBounds;
 }
-
+/*
 bool ShapeSet::intersectTriPlanes(Intersection& intersection) {
   bool doesIntersect = false;
   for (std::vector<Plane*>::iterator iter = planes.begin();
@@ -38,6 +35,7 @@ bool ShapeSet::intersectTriPlanes(Intersection& intersection) {
   }
   return doesIntersect;
 }
+*/
 
 Plane::Plane(Point& coordA, Point& coordB, Point& coordC) {
   vertA = coordA;
@@ -59,16 +57,27 @@ Plane::~Plane() {
 bool Plane::intersect(Intersection& intersection) {
   float dDotN = dot(intersection.ray.direction, normal);
   if (dDotN == 0.0f) {
+    //std::cout << "dDotN == 0 is true" << '\n';
     return false;
   }
   float t = dot(position - intersection.ray.origin, normal) / dDotN;
-  if (t <= RAY_T_MIN || t >= intersection.t) {
+  if (t <= RAY_T_MIN || t >= RAY_T_MAX) {
+    //std::cout << "t outside of min to max" << '\n';
     return false;
   }
+  intersection.setPointOfIntersect(t);
+  //bool curIntInBounds = inBounds(intersection, t);
+  if (inBounds(intersection) == 0 || t >= intersection.t) {
+    //std::cout << "inBounds is false or t bigger than intersection.t" << '\n';
+    return false;
+    //
+  }
+  //std::cout << "Hallo hallo hallo" << '\n';
   intersection.t = t;
   intersection.aPlane = this;
   return true;
 }
+//t >= intersection.t;
 /*
 float Plane::getSX() {
   float smallestX = coords[0].x;
@@ -82,12 +91,19 @@ float Plane::getSX() {
 */
 
 bool Plane::inBounds(Intersection& intersection) {
-  intersection.setPointOfIntersect();
   Point intPoint = intersection.pointOfIntersect;
+  bool pit = false;
   //std::cout << "intPointXYZ: " << intPoint.x << '\t' <<
   //intPoint.y << '\t' <<
   //intPoint.z << '\n';
-  return pointInTriangle(intPoint, vertA, vertB, vertC);
+  if (pointInTriangle(intPoint, vertA, vertB, vertC)) {
+    pit = true;
+    Vector vPB = intPoint - vertB;
+    Vector vPC = intPoint - vertC;
+    Vector nAtPOI = cross(vPB, vPC);
+    intersection.normalAtPOI = nAtPOI.normalized();
+  }
+  return pit;
 }
 /*
   srand((unsigned)time(NULL));

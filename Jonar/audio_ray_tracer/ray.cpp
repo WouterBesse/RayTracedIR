@@ -24,8 +24,8 @@ bool Intersection::intersectedPlane() const {
   return (aPlane != NULL);
 }
 
-void Intersection::setPointOfIntersect() {
-  pointOfIntersect = ray.origin + ray.direction * t;
+void Intersection::setPointOfIntersect(float tempT) {
+  pointOfIntersect = ray.origin + ray.direction * tempT;
   //pointOfIntersect = ray.pointOfIntersect;
 }
 /*

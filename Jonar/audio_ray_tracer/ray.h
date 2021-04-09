@@ -37,12 +37,13 @@ struct Intersection {
   float t;
   Plane *aPlane;
   Point pointOfIntersect;
+  Vector normalAtPOI;
 
   Intersection(const Ray& ray);
   virtual ~Intersection();
 
   bool intersectedPlane() const;
-  void setPointOfIntersect();
+  void setPointOfIntersect(float tempT);
 //  bool intersectedBounds() const;
 };
 
