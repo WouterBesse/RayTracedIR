@@ -15,7 +15,7 @@ public:
   virtual ~ShapeSet();
   void addPlane(Plane* plane);
   virtual bool intersect(Intersection& intersection);
-  virtual bool intersectTriPlanes(Intersection& intersection);
+//  virtual bool intersectTriPlanes(Intersection& intersection);
   std::vector<Plane*> planes;
 
 };
