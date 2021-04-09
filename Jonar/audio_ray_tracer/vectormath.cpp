@@ -39,6 +39,11 @@ inline float Vector::length2()
 	return sqr(x) + sqr(y) + sqr(z);
 }
 
+inline float Vector::kaazig()
+{
+    return x;
+}
+
 inline float Vector::length()
 {
 	return std::sqrt(length2());

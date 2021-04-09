@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <Windows.h>
-#include "port_audio.h"
-#include "ringbuffer.h"
+#include "../headers/port_audio.h"
+#include "../headers/ringbuffer.h"
 
 
 const int numberOfDelays = 1000;
@@ -19,7 +19,6 @@ void DisplayHelpInfo();
 void SetupAudio(PortAudio &portAudio);
 
 void TeardownAudio(PortAudio &portAudio);
-
 
 int IsKeyPressed(char Key);
 
