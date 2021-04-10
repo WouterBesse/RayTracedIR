@@ -34,7 +34,7 @@ public:
   Plane(Point& coordA, Point& coordB, Point& coordC);
   virtual ~Plane();
   virtual bool intersect(Intersection& intersection);
-  virtual bool inBounds(Intersection& intersection);
+  virtual bool inBounds(Intersection& intersection, float t);
   virtual bool sameSide(Point p1, Point p2, Point a ,Point b);
   virtual bool pointInTriangle(Point p, Point a, Point b, Point c);
 };

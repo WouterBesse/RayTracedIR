@@ -41,6 +41,10 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
         tracedRay.rayInBounds = true;
         tracedRay.interDistance = intersection.t;
         tracedRay.pointOfIntersect = intersection.pointOfIntersect;
+        /*if(tracedRay.rayInBounds){
+        std::cout << "pointOfIntersect XYZ: " << intersection.pointOfIntersect.x << '\t' <<
+        intersection.pointOfIntersect.y << '\t' << intersection.pointOfIntersect.z << '\n';
+      } */
         tracedRay.rayOrigin = ray.origin;
         tracedRay.rayDirection = ray.direction;
         tracedRay.planeNormal = intersection.normalAtPOI;
@@ -150,12 +154,14 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
         curNormal = tracedRays[i][j].planeNormal;
         curPointOfIntersect = tracedRays[i][j].pointOfIntersect;
         vI = curPointOfIntersect - tracedRays[i][j].rayOrigin;
-        vI = vI.normalized();
-        vR = ((2 * dot(curNormal, vI)) * curNormal) - vI;
+        //vI = vI.normalized();
+        vR = vI - ((2 * dot(curNormal, vI)) * curNormal);
         //vR = vR.normalized();
 
         Ray ray(curPointOfIntersect, vR.normalized());
         Intersection intersection(ray);
+        //std::cout << "rayOrigin XYZ: " << ray.origin.x << '\t' <<
+        //ray.origin.y << '\t' << ray.origin.z << '\n';
         //std::cout << "curPointOfIntersect XYZ: " << curPointOfIntersect.x << '\t' <<
         //curPointOfIntersect.y << '\t' << curPointOfIntersect.z << '\n';
         /*
@@ -165,7 +171,7 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
         ray.direction.y << '\t' << ray.direction.z << '\n';
 */
         if (scene->intersect(intersection)) {
-          std::cout << "till here" << '\n';
+          //std::cout << "till here" << '\n';
           //tracedRay.x = x;
           //tracedRay.y = y;
           tracedRay.rayInBounds = true;
@@ -193,6 +199,7 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
   bounceData.open("bounceData.txt");
 
   for (int i = 0; i < bounceCount; i++) {
+    // 1036975
     bounceData << "Origin-xyz: ";
     bounceData << tracedRays[i][1036975].rayOrigin.x << ", " <<
     tracedRays[i][1036975].rayOrigin.y << ", " <<

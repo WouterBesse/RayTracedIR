@@ -11,7 +11,7 @@ void ShapeSet::addPlane(Plane* plane) {
 }
 
 bool ShapeSet::intersect(Intersection& intersection) {
-  bool doesIntersect = false;
+  //bool doesIntersect = false;
   bool intInBounds = false;
   for (std::vector<Plane*>::iterator iter = planes.begin();
   iter != planes.end();
@@ -61,13 +61,13 @@ bool Plane::intersect(Intersection& intersection) {
     return false;
   }
   float t = dot(position - intersection.ray.origin, normal) / dDotN;
-  if (t <= RAY_T_MIN || t >= RAY_T_MAX) {
+  if (t <= RAY_T_MIN || t >= intersection.t) {
     //std::cout << "t outside of min to max" << '\n';
     return false;
   }
-  intersection.setPointOfIntersect(t);
-  //bool curIntInBounds = inBounds(intersection, t);
-  if (inBounds(intersection) == 0 || t >= intersection.t) {
+  //intersection.setPointOfIntersect(t);
+  bool curIntInBounds = inBounds(intersection, t);
+  if (curIntInBounds != 1) {
     //std::cout << "inBounds is false or t bigger than intersection.t" << '\n';
     return false;
     //
@@ -90,18 +90,19 @@ float Plane::getSX() {
 }
 */
 
-bool Plane::inBounds(Intersection& intersection) {
-  Point intPoint = intersection.pointOfIntersect;
+bool Plane::inBounds(Intersection& intersection, float t) {
+  Point intPoint = intersection.ray.origin + intersection.ray.direction * t;
   bool pit = false;
   //std::cout << "intPointXYZ: " << intPoint.x << '\t' <<
   //intPoint.y << '\t' <<
   //intPoint.z << '\n';
   if (pointInTriangle(intPoint, vertA, vertB, vertC)) {
     pit = true;
-    Vector vPB = intPoint - vertB;
-    Vector vPC = intPoint - vertC;
+    Vector vPB = vertB - intPoint;
+    Vector vPC = vertC - intPoint;
     Vector nAtPOI = cross(vPB, vPC);
     intersection.normalAtPOI = nAtPOI.normalized();
+    intersection.pointOfIntersect = intPoint;
   }
   return pit;
 }
