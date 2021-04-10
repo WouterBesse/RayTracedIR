@@ -15,6 +15,7 @@ struct TracedRay {
   int y;
   bool rayInBounds;
   float interDistance;
+  float summedDistance;
   Point pointOfIntersect;
   Vector rayDirection;
   Point rayOrigin;
@@ -29,6 +30,8 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
   TracedRay tracedRay;
   std::vector<TracedRay> tracedRays[bounceCount + 1];
 
+  std::cout << '\n' << "Casting rays..." << '\n';
+
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
       Vector2 screenCoord((2.0f*x) / width - 1.0f, (-2.0f*y) / height + 1.0f);
@@ -40,6 +43,7 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
         tracedRay.y = y;
         tracedRay.rayInBounds = true;
         tracedRay.interDistance = intersection.t;
+        tracedRay.summedDistance = intersection.t;
         tracedRay.pointOfIntersect = intersection.pointOfIntersect;
         /*if(tracedRay.rayInBounds){
         std::cout << "pointOfIntersect XYZ: " << intersection.pointOfIntersect.x << '\t' <<
@@ -147,10 +151,13 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
   Point curPointOfIntersect;
   Vector vI;
   Vector vR;
+  float summedDistance;
   // NOW DO THE RECURSIVE BOUNCING
+  std::cout << '\n' << "Tracing rays..." << '\n';
   for (int i = 0; i < bounceCount; i ++) {
     for (int j = 0; j < tracedRays[i].size(); j++) {
       if (tracedRays[i][j].rayInBounds != 0) {
+        summedDistance = tracedRays[i][j].summedDistance;
         curNormal = tracedRays[i][j].planeNormal;
         curPointOfIntersect = tracedRays[i][j].pointOfIntersect;
         vI = curPointOfIntersect - tracedRays[i][j].rayOrigin;
@@ -176,6 +183,7 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
           //tracedRay.y = y;
           tracedRay.rayInBounds = true;
           tracedRay.interDistance = intersection.t;
+          tracedRay.summedDistance = summedDistance + intersection.t;
           tracedRay.pointOfIntersect = intersection.pointOfIntersect;
           tracedRay.rayOrigin = ray.origin;
           tracedRay.rayDirection = ray.direction;
@@ -194,6 +202,38 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
       }
     }
   }
+  std::vector<float> raySummedDistances;
+  for (int j = 0; j < tracedRays[bounceCount].size(); j++) {
+    Vector returnRay = Point(0.0f, 0.0f, 0.0f) - tracedRays[bounceCount][j].pointOfIntersect;
+    float totalRayDistance = tracedRays[bounceCount][j].summedDistance + returnRay.length();
+    //std::cout << "totalRayDistance: " << totalRayDistance << '\n';
+    raySummedDistances.push_back(totalRayDistance);
+  }
+
+  std::ofstream totalRayDistanceDataN;
+  totalRayDistanceDataN.open("totalRayDistanceDataN.txt");
+
+  for (int i = 0; i < raySummedDistances.size(); i++) {
+    if (tracedRays[0][i].rayInBounds != 0) {
+    totalRayDistanceDataN << raySummedDistances[i] << "\n";
+    }
+  }
+
+  totalRayDistanceDataN.close();
+  std::cout << "---totalRayDistanceDataN.txt file written---" << '\n';
+
+  std::ofstream totalRayDistanceDataC;
+  totalRayDistanceDataC.open("totalRayDistanceDataC.txt");
+
+  for (int i = 0; i < raySummedDistances.size(); i++) {
+    if (tracedRays[0][i].rayInBounds != 0) {
+    totalRayDistanceDataC << raySummedDistances[i] << ", ";
+    }
+  }
+
+  totalRayDistanceDataC.close();
+  std::cout << "---totalRayDistanceDataC.txt file written---" << '\n';
+
 
   std::ofstream bounceData;
   bounceData.open("bounceData.txt");
@@ -210,9 +250,9 @@ void rayTrace(Camera* camera, ShapeSet* scene) {
     tracedRays[i][1036975].rayDirection.z << '\n';
     bounceData << "rayInBounds: " << tracedRays[i][1036975].rayInBounds << '\n' << '\n';
   }
-  bounceData << "tracedRays[4].size(): " << tracedRays[4].size() << '\n';
+  bounceData << "tracedRays[x].size(): " << tracedRays[bounceCount].size() << '\n';
   bounceData.close();
-  std::cout << "---BounceData.txt file written---" << '\n';
+  std::cout << "---BounceData.txt file written---" << '\n' << '\n';
 }
 
 int main(int argc, char *argv[]) {
