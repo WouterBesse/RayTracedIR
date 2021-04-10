@@ -6,10 +6,11 @@
 
 int main()
 {
-    std::cout << "kaas \n";
     Reverb ninoVerb;
 //    std::thread reverbThread = std::thread(&reverb::startVerb, ninoVerb);
     ninoVerb.startVerb();
+
 //    reverbThread.join();
+
     return 0;
 }

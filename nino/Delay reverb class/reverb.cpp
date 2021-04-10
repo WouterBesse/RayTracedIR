@@ -2,7 +2,6 @@
 #include ".\reverb.h"
 
 Reverb::Reverb() {
-    std::cout << "kaas2 \n";
     DisplayHelpInfo();
     portAudio = new PortAudio{callback};
 }
@@ -13,13 +12,13 @@ int Reverb::startVerb() {
 
 
     SetupAudio();
-
+    DisplayHelpInfo();
     // keep the program running and listen for user input, q = quit
 
     while (true) {
         // live keyboard in
         // quit the program
-        int lastDelayMultiplier = 0;
+        int lastDelayMultiplier = 1;
         if (IsKeyPressed('Q')) {
             TeardownAudio();
             break;

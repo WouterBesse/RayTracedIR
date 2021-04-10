@@ -28,6 +28,7 @@ public:
             DelayMultiplier = 0.1;
             delayVal = 2.0;
             InitializeDelayList();
+
         }
 
         ~TestCallback() = default;
@@ -38,7 +39,7 @@ public:
 
         void process(float *input, float *output, int numSamples, int numChannels) override {
             for (auto i = 0; i < numSamples; ++i) {
-                ringbuffer1.push(0.1 * input[i * numChannels]);
+                ringbuffer1.push(0.91 * input[i * numChannels]);
                 auto SingleSample = ringbuffer1.getSamples(iDelays, fVolumes);
                 output[i * 2] = SingleSample;
                 output[i * 2 + 1] = SingleSample;
@@ -67,22 +68,23 @@ public:
         void setDelayList() {
             float j = 1.0;
             for (int i = 0; i < numberOfDelays; i++) {
-                randList[i] = rand() % 10 + 2;
+                randList[i] = (10 + 2);
                 delayVal += randList[i] * i * DelayMultiplier;
                 iDelays[i] = (int) delayVal;
                 fVolumes[i] = j;
                 j = j * 0.97f;
+                //std::cout<<i<<"/n";
             }
         }
 
         void InitializeDelayList() {
             float j = 1.0;
-            for (int i = 0; i < numberOfDelays; i++) {
-                randList[i] = rand() % 10 + 2;
+            for (int i = 0; i <= numberOfDelays; i++) {
+                randList.push_back(rand() % 10 + 2);
                 delayVal += randList[i] * i * DelayMultiplier;
-                iDelays[i] = (int) delayVal;
-                fVolumes[i] = j;
-                j = j * 0.97f;
+                iDelays.push_back((int) delayVal);
+                fVolumes.push_back(j);
+
             }
         }
 
@@ -103,7 +105,6 @@ public:
 
     PortAudio *portAudio;
 
-private:
 
     static void DisplayHelpInfo();
 
