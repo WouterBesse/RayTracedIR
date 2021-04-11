@@ -9,13 +9,11 @@
 #define PI 3.1415926f
 #endif
 
-inline float sqr(float n)
-{
+inline float sqr(float n) {
 	return n * n;
 }
 
-struct Vector
-{
+struct Vector {
 	float x, y, z;
 
 	Vector();
@@ -42,57 +40,49 @@ struct Vector
 float dot(Vector v1, Vector v2);
 Vector cross(Vector v1, Vector v2);
 
-inline Vector operator +(const Vector& v1, const Vector& v2)
-{
+inline Vector operator +(const Vector& v1, const Vector& v2) {
 	return Vector(v1.x + v2.x,
 		v1.y + v2.y,
 		v1.z + v2.z);
 }
 
-inline Vector operator -(const Vector& v1, const Vector& v2)
-{
+inline Vector operator -(const Vector& v1, const Vector& v2) {
 	return Vector(v1.x - v2.x,
 		v1.y - v2.y,
 		v1.z - v2.z);
 }
 
-inline Vector operator *(const Vector& v1, const Vector& v2)
-{
+inline Vector operator *(const Vector& v1, const Vector& v2) {
 	return Vector(v1.x * v2.x,
 		v1.y * v2.y,
 		v1.z * v2.z);
 }
 
-inline Vector operator *(const Vector& v, float f)
-{
+inline Vector operator *(const Vector& v, float f) {
 	return Vector(v.x * f,
 		v.y * f,
 		v.z * f);
 }
 
-inline Vector operator *(float f, const Vector& v)
-{
+inline Vector operator *(float f, const Vector& v) {
 	return Vector(f * v.x,
 		f * v.y,
 		f * v.z);
 }
 
-inline Vector operator /(const Vector& v1, const Vector& v2)
-{
+inline Vector operator /(const Vector& v1, const Vector& v2) {
 	return Vector(v1.x / v2.x,
 		v1.y / v2.y,
 		v1.z / v2.z);
 }
 
-inline Vector operator /(const Vector& v, float f)
-{
+inline Vector operator /(const Vector& v, float f) {
 	return Vector(v.x / f,
 		v.y / f,
 		v.z / f);
 }
 
-inline Vector operator /(float f, const Vector& v)
-{
+inline Vector operator /(float f, const Vector& v) {
 	return Vector(f / v.x,
 		f / v.y,
 		f / v.z);
@@ -100,8 +90,7 @@ inline Vector operator /(float f, const Vector& v)
 
 typedef Vector Point;
 
-struct Vector2
-{
+struct Vector2 {
 	float u, v;
 
 	Vector2();

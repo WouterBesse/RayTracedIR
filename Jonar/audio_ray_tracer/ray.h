@@ -19,17 +19,7 @@ struct Ray {
   Ray(const Point& origin, const Vector& direction, float tMax = RAY_T_MAX);
   virtual ~Ray();
 };
-/*
-struct TracedRay {
-  int x;
-  int y;
-  bool rayIntersected;
-  bool rayInBounds;
-  float interDistance;
-  TracedRay();
-  ~TracedRay();
-};
-*/
+
 class Plane;
 
 struct Intersection {
@@ -43,8 +33,6 @@ struct Intersection {
   virtual ~Intersection();
 
   bool intersectedPlane() const;
-  void setPointOfIntersect(float tempT);
-//  bool intersectedBounds() const;
 };
 
 #endif // RAY_H

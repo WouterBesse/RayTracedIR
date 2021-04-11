@@ -3,8 +3,8 @@ CFLAGS = -I/usr/local/include -Wall -std=c++17
 
 all: rayTracer
 
-rayTracer : ray.o shape.o camera.o vectormath.o main.o
-	$(CC) -o $@ $(CFLAGS) ray.o shape.o camera.o vectormath.o main.o $(LDFLAGS)
+rayTracer : ray.o shape.o camera.o vectormath.o rayTracer.o main.o
+	$(CC) -o $@ $(CFLAGS) ray.o shape.o camera.o vectormath.o rayTracer.o main.o $(LDFLAGS)
 
 .cpp.o:
 	$(CC) -c $< $(CFLAGS)
@@ -12,3 +12,5 @@ rayTracer : ray.o shape.o camera.o vectormath.o main.o
 clean:
 	rm -f *.o
 	rm -f rayTracer
+	rm -f *.txt
+	rm -f *.pgm

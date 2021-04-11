@@ -23,13 +23,3 @@ Intersection::~Intersection() {
 bool Intersection::intersectedPlane() const {
   return (aPlane != NULL);
 }
-
-void Intersection::setPointOfIntersect(float tempT) {
-  pointOfIntersect = ray.origin + ray.direction * tempT;
-  //pointOfIntersect = ray.pointOfIntersect;
-}
-/*
-  bool Intersection::intersectedBounds() const {
-    return (inBounds = true);
-  }
-*/

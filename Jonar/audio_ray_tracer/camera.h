@@ -21,7 +21,6 @@ protected:
 public:
   PerspectiveCamera(Point origin, Vector target, Vector upguide, float fov,
     float aspectRatio);
-
     virtual Ray makeRay(Vector2 point) const;
 };
 

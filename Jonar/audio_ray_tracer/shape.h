@@ -4,20 +4,15 @@
 #include <vector>
 #include "ray.h"
 #include <iostream>
-//#include "time.h"
 
 class ShapeSet {
-//protected:
-
-
 public:
+  std::vector<Plane*> planes;
+
   ShapeSet();
   virtual ~ShapeSet();
   void addPlane(Plane* plane);
   virtual bool intersect(Intersection& intersection);
-//  virtual bool intersectTriPlanes(Intersection& intersection);
-  std::vector<Plane*> planes;
-
 };
 
 class Plane {
