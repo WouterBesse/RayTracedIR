@@ -1,8 +1,0 @@
-﻿  3D_Demo.cpp
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(215,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(215,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(214,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(214,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(213,55): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\ninos\source\repos\3D_Enviroment\3D_Enviroment\3D_Demo.cpp(213,34): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  3D_Enviroment.vcxproj -> C:\Users\ninos\source\repos\3D_Enviroment\Debug\3D_Enviroment.exe
