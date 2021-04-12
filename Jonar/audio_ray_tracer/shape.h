@@ -1,3 +1,10 @@
+/*
+#
+# 2021 Jonar Verbart
+# Part of RayTracedIR by Wouter Besse, Nino Saglia and Jonar Verbart
+#
+*/
+
 #ifndef SHAPE_H
 #define SHAPE_H
 
@@ -7,7 +14,7 @@
 
 class ShapeSet {
 public:
-  std::vector<Plane*> planes;
+  std::vector<Plane*> planes; // stores all the planes
 
   ShapeSet();
   virtual ~ShapeSet();

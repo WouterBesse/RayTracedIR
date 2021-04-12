@@ -5,9 +5,9 @@
 #include "ray.h"
 
 class Camera {
-  public:
-    virtual ~Camera(){}
-    virtual Ray makeRay(Vector2 point) const = 0;
+public:
+  virtual ~Camera(){}
+  virtual Ray makeRay(Vector2 point) const = 0;
 };
 
 class PerspectiveCamera : public Camera {

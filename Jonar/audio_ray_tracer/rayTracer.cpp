@@ -1,3 +1,10 @@
+/*
+#
+# 2021 Jonar Verbart
+# Part of RayTracedIR by Wouter Besse, Nino Saglia and Jonar Verbart
+#
+*/
+
 #include "rayTracer.h"
 
 RayTracer::RayTracer() {
@@ -10,16 +17,19 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
   int bounceCount = 5; // make >= 1
 
   // Data saver to prevent writing large files over and over
+  int dataSaver = 1;
   // set to 0 to write totalRayDistanceData only (use for program)
   // set to 1 to write pgm image and bounceData (low level debugging, less data)
   // set to 2 to write all debugging files (writes a lot more data)
-  int dataSaver = 1;
 
+  // Store all the data about the traced rays in an array of vectors
   TracedRay tracedRay;
   std::vector<TracedRay> tracedRays[bounceCount + 1];
 
   std::cout << '\n' << "Casting rays..." << '\n';
 
+  // Make primary rays using screen coordinates and camera, create intersection
+  // of ray and scene, then store the data in tracedRays
   for (int x = 0; x < width; x++) {
     for (int y = 0; y < height; y++) {
       Vector2 screenCoord((2.0f*x) / width - 1.0f, (-2.0f*y) / height + 1.0f);
@@ -45,10 +55,10 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     }
   }
 
-  if (dataSaver == 2) {
+  if (dataSaver == 2) { // high level debugging
+    // Write debugging information about primary rays per pixel to a file
     std::ofstream debugData;
     debugData.open("debugData.txt");
-
     for (int i = 0; i < tracedRays[0].size(); i++) {
       if (tracedRays[0][i].rayInBounds != 0) {
         debugData << "x: " << tracedRays[0][i].x << '\t';
@@ -64,33 +74,31 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     debugData.close();
     std::cout << "---debugData.txt file written---" << '\n';
 
+    // Write intersection distances to a file, spaced by '\n'
     std::ofstream intersectionDataN;
     intersectionDataN.open("intersectionDataN.txt");
-
     for (int i = 0; i < tracedRays[0].size(); i++) {
       if (tracedRays[0][i].rayInBounds != 0) {
         intersectionDataN << tracedRays[0][i].interDistance << '\n';
       }
     }
-
     intersectionDataN.close();
     std::cout << "---intersectionDataN.txt file written---" << '\n';
 
+    // Write intersection distances to a file, spaced by ', '
     std::ofstream intersectionDataC;
     intersectionDataC.open("intersectionDataC.txt");
-
     for (int i = 0; i < tracedRays[0].size(); i++) {
       if (tracedRays[0][i].rayInBounds != 0) {
         intersectionDataC << tracedRays[0][i].interDistance << ", ";
       }
     }
-
     intersectionDataC.close();
     std::cout << "---intersectionDataC.txt file written---" << '\n';
   }
 
-  if (dataSaver == 1 || dataSaver == 2) {
-    // ---make image file---
+  // Make a greyscale image of the camera's view
+  if (dataSaver == 1 || dataSaver == 2) { // low and high level debugging
     int tempImage[height][width];
     int temp = 0;
     int xPixel = 0;
@@ -131,10 +139,11 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     std::cout << "---pgmimg.pgm file written---" << '\n';
   }
 
+  // Initialize variables for recursive bouncing
   Vector curNormal;
   Point curPointOfIntersect;
-  Vector vI;
-  Vector vR;
+  Vector vI;  // incoming ray
+  Vector vR;  // reflected, outgoing ray
   float summedDistance;
 
   // Recursive bouncing
@@ -170,6 +179,8 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
       }
     }
   }
+  // Make a ray returning from the last bounce to the listener/camera and store
+  // total distances of bounced rays in a vector
   std::vector<float> raySummedDistances;
   for (int j = 0; j < tracedRays[bounceCount].size(); j++) {
     Vector returnRay = Point(0.0f, 0.0f, 0.0f) -
@@ -179,36 +190,34 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     raySummedDistances.push_back(totalRayDistance);
   }
 
-  if (dataSaver == 0 || dataSaver == 2) {
+  if (dataSaver == 0 || dataSaver == 2) { // program- and high level debugging
+    // Write the total distances to a file, spaced by '\n'
     std::ofstream totalRayDistanceDataN;
     totalRayDistanceDataN.open("totalRayDistanceDataN.txt");
-
     for (int i = 0; i < raySummedDistances.size(); i++) {
       if (tracedRays[0][i].rayInBounds != 0) {
         totalRayDistanceDataN << raySummedDistances[i] << "\n";
       }
     }
-
     totalRayDistanceDataN.close();
     std::cout << "---totalRayDistanceDataN.txt file written---" << '\n';
 
+    // Write the total distances to a file, spaced by ', '
     std::ofstream totalRayDistanceDataC;
     totalRayDistanceDataC.open("totalRayDistanceDataC.txt");
-
     for (int i = 0; i < raySummedDistances.size(); i++) {
       if (tracedRays[0][i].rayInBounds != 0) {
         totalRayDistanceDataC << raySummedDistances[i] << ", ";
       }
     }
-
     totalRayDistanceDataC.close();
     std::cout << "---totalRayDistanceDataC.txt file written---" << '\n';
   }
 
-  if(dataSaver == 1 || dataSaver == 2) {
+  if(dataSaver == 1 || dataSaver == 2) { // low and high level debugging
+    // Write a single ray's journey to a file
     std::ofstream bounceData;
     bounceData.open("bounceData.txt");
-
     for (int i = 0; i < bounceCount; i++) {
       bounceData << "Origin-xyz: ";
       bounceData << tracedRays[i][1036975].rayOrigin.x << ", " <<

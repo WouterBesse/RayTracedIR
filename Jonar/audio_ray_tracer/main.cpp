@@ -1,8 +1,16 @@
+/*
+#
+# 2021 Jonar Verbart
+# Part of RayTracedIR by Wouter Besse, Nino Saglia and Jonar Verbart
+#
+*/
+
 #include "rayTracer.h"
 
 int main(int argc, char const *argv[]) {
   ShapeSet scene;
 
+  // hardcoded test scene data, to be replaced with blender import function
   Point coordA;
   Point coordB;
   Point coordC;
@@ -103,6 +111,7 @@ int main(int argc, char const *argv[]) {
   scene.addPlane(&triangleFGH);
   Plane triangleEFH(coordE, coordF, coordH);
   scene.addPlane(&triangleEFH);
+  // end of hardcoded test scene data
 
   RayTracer rayTracer;
   rayTracer.traceScene(&scene);
