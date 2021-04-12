@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\synth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\oscillator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\sampleconv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\sine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\square.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\convolution.cu">
+      <Filter>Source Files</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_gpu\src\cpp_scripts\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F82EB956-FFD1-3708-8164-8BDF41F4D3F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

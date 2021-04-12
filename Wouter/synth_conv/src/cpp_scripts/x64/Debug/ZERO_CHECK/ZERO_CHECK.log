@@ -1,0 +1,9 @@
+﻿  Checking Build System
+  CMake is re-running because H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/CMakeFiles/generate.stamp is out-of-date.
+    the file 'H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/CMakeLists.txt'
+    is newer than 'H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.18363.
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts

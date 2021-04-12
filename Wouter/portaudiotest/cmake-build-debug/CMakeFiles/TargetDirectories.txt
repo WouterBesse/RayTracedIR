@@ -1,0 +1,16 @@
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/test.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/install/local.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/install.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/edit_cache.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/list_install_components.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/CMakeFiles/install/strip.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/portaudio.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/install.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/install/local.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/edit_cache.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/portaudio_static.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/uninstall.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/rebuild_cache.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/list_install_components.dir
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/portaudiotest/cmake-build-debug/_deps/port_audio-build/CMakeFiles/install/strip.dir

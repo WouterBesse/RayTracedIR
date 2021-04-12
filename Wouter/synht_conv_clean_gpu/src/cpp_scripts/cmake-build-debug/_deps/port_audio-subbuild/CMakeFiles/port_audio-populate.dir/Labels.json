@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/port_audio-populate"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/34b96fcf1bd0ec97efcfea9952eebe63/port_audio-populate.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/53527c61952f7a752a8fe35163a0af66/port_audio-populate-complete.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-install.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-mkdir.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-download.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-update.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-patch.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-configure.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-build.rule"
+		},
+		{
+			"file" : "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean_gpu/src/cpp_scripts/cmake-build-debug/_deps/port_audio-subbuild/CMakeFiles/b3941bac59250830c5a05216467052a8/port_audio-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"port_audio-populate"
+		],
+		"name" : "port_audio-populate"
+	}
+}

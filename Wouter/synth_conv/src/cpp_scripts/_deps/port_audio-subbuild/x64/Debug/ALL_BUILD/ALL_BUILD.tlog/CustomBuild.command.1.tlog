@@ -1,0 +1,10 @@
+^H:\DESKTOP\MUSIC PROJECTS\SCHOOL\JAAR 2\RAYTRACEDIR\RAYTRACEDIR\WOUTER\SYNTH_CONV\SRC\CPP_SCRIPTS\_DEPS\PORT_AUDIO-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/_deps/port_audio-subbuild" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/_deps/port_audio-subbuild" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synth_conv/src/cpp_scripts/_deps/port_audio-subbuild/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

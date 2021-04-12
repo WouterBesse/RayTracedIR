@@ -1,0 +1,54 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/main.cpp
+iostream
+-
+./port_audio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/port_audio.h
+./ringbuffer.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/ringbuffer.h
+./reverb.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/reverb.h
+thread
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/port_audio.h
+portaudio.h
+-
+exception
+-
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/reverb.cpp
+iostream
+-
+./reverb.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/reverb.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/reverb.h
+iostream
+-
+cmath
+-
+Windows.h
+-
+vector
+-
+./port_audio.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/port_audio.h
+./ringbuffer.h
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/ringbuffer.h
+
+H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/ringbuffer.h
+iostream
+-
+vector
+-
+
+_deps/port_audio-src/include/portaudio.h
+

@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EB908AC-3228-3743-A747-27265B8535B7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Appeltaart</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Appeltaart.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Appeltaart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Appeltaart.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Appeltaart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Appeltaart.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Appeltaart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Appeltaart.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Appeltaart</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;FMT_LOCALE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;FMT_LOCALE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\port_audio-build\Debug\portaudio_static_x64.lib;_deps\fmtlib-build\Debug\fmtd.lib;winmm.lib;dsound.lib;ole32.lib;uuid.lib;setupapi.lib;ole32.lib;uuid.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/Debug/Appeltaart.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/Debug/Appeltaart.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\port_audio-build\Release\portaudio_static_x64.lib;_deps\fmtlib-build\Release\fmt.lib;winmm.lib;dsound.lib;ole32.lib;uuid.lib;setupapi.lib;ole32.lib;uuid.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/Release/Appeltaart.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/Release/Appeltaart.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\port_audio-build\MinSizeRel\portaudio_static_x64.lib;_deps\fmtlib-build\MinSizeRel\fmt.lib;winmm.lib;dsound.lib;ole32.lib;uuid.lib;setupapi.lib;ole32.lib;uuid.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/MinSizeRel/Appeltaart.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/MinSizeRel/Appeltaart.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FMT_LOCALE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>_deps\port_audio-build\RelWithDebInfo\portaudio_static_x64.lib;_deps\fmtlib-build\RelWithDebInfo\fmt.lib;winmm.lib;dsound.lib;ole32.lib;uuid.lib;setupapi.lib;ole32.lib;uuid.lib;setupapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/RelWithDebInfo/Appeltaart.lib</ImportLibrary>
+      <ProgramDataBaseFile>H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/RelWithDebInfo/Appeltaart.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug" --check-stamp-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeCXXCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeRCCompiler.cmake;H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\3.17.5\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\main.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\synth.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\convolution.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\oscillator.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\sampleconv.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\sine.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\square.cpp" />
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\ZERO_CHECK.vcxproj">
+      <Project>{BABDB44B-8E96-3DBA-9253-78D909716E00}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\fmtlib-build\fmt.vcxproj">
+      <Project>{2A82E7C2-22BE-36C2-9863-413763DA2CC9}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean\src\cpp_scripts\cmake-build-debug\_deps\port_audio-build\portaudio_static.vcxproj">
+      <Project>{146E56A4-A41C-3FDC-A28E-EC65E2A353F9}</Project>
+      <Name>portaudio_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

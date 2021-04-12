@@ -1,0 +1,182 @@
+The system is: Windows - 10.0.18363 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29910 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.28.29910.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.28.29910/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.28.29910 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.28.29910.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/3.17.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_0e29c\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_0e29c.dir\build.make /nologo -L                  CMakeFiles\cmTC_0e29c.dir\build
+Building C object CMakeFiles/cmTC_0e29c.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nm8B1B.tmp
+testCCompiler.c
+Linking C executable cmTC_0e29c.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_0e29c.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_0e29c.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nm8C64.tmp
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_40ec5\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_40ec5.dir\build.make /nologo -L                  CMakeFiles\cmTC_40ec5.dir\build
+Building C object CMakeFiles/cmTC_40ec5.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nm8FDD.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_40ec5.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_40ec5.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_40ec5.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nm903C.tmp
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_26752\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_26752.dir\build.make /nologo -L                  CMakeFiles\cmTC_26752.dir\build
+Building CXX object CMakeFiles/cmTC_26752.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nm92DB.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTC_26752.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_26752.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_26752.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nm933A.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_cc7dd\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_cc7dd.dir\build.make /nologo -L                  CMakeFiles\cmTC_cc7dd.dir\build
+Building CXX object CMakeFiles/cmTC_cc7dd.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nm96B3.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_cc7dd.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_cc7dd.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_cc7dd.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nm9722.tmp
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_66988\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_66988.dir\build.make /nologo -L                  CMakeFiles\cmTC_66988.dir\build
+Building C object CMakeFiles/cmTC_66988.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nmCC5A.tmp
+CheckIncludeFile.c
+Linking C executable cmTC_66988.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_66988.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_66988.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nmCCA9.tmp
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_2d71b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_2d71b.dir\build.make /nologo -L                  CMakeFiles\cmTC_2d71b.dir\build
+Building C object CMakeFiles/cmTC_2d71b.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nmCFD4.tmp
+CheckIncludeFile.c
+Linking C executable cmTC_2d71b.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_2d71b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_2d71b.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nmD024.tmp
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_99e7b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_99e7b.dir\build.make /nologo -L                  CMakeFiles\cmTC_99e7b.dir\build
+Building C object CMakeFiles/cmTC_99e7b.dir/CheckIncludeFile.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nmD2E2.tmp
+CheckIncludeFile.c
+Linking C executable cmTC_99e7b.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_99e7b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_99e7b.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nmD331.tmp
+
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_d3bcd\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_d3bcd.dir\build.make /nologo -L                  CMakeFiles\cmTC_d3bcd.dir\build
+Building C object CMakeFiles/cmTC_d3bcd.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nmD5A1.tmp
+CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_d3bcd.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d3bcd.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_d3bcd.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nmD5E0.tmp
+
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/RayTracedIR/nino/Delay reverb class/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_991f5\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_991f5.dir\build.make /nologo -L                  CMakeFiles\cmTC_991f5.dir\build
+Building C object CMakeFiles/cmTC_991f5.dir/TestEndianess.c.obj
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\cl.exe @C:\Users\woute\AppData\Local\Temp\nmD89E.tmp
+TestEndianess.c
+Linking C executable cmTC_991f5.exe
+	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_991f5.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1428~1.299\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_991f5.dir\objects1.rsp @C:\Users\woute\AppData\Local\Temp\nmD8DE.tmp
+
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+

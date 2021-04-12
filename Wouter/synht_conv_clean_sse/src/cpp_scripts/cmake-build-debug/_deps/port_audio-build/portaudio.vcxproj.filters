@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_allocation.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_converters.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_cpuload.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_debugprint.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_dither.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_front.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_process.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_ringbuffer.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_stream.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_trace.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\skeleton\pa_hostapi_skeleton.c">
+      <Filter>hostapi\skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_hostapis.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_util.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_waveformat.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_wdmks_utils.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_coinitialize.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_x86_plain_converters.c">
+      <Filter>os\win</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\dsound\pa_win_ds.c">
+      <Filter>hostapi\dsound</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\dsound\pa_win_ds_dynlink.c">
+      <Filter>hostapi\dsound</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\wmme\pa_win_wmme.c">
+      <Filter>hostapi\wmme</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\wasapi\pa_win_wasapi.c">
+      <Filter>hostapi\wasapi</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\wdmks\pa_win_wdmks.c">
+      <Filter>hostapi\wdmks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_coinitialize.h">
+      <Filter>os\win</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_win_wdmks_utils.h">
+      <Filter>os\win</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\os\win\pa_x86_plain_converters.h">
+      <Filter>os\win</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\hostapi\dsound\pa_win_ds_dynlink.h">
+      <Filter>hostapi\dsound</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-build\options_cmake.h">
+      <Filter>cmake_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\portaudio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\pa_win_ds.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\pa_win_waveformat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\pa_win_wmme.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\pa_win_wasapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\include\pa_win_wdmks.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_allocation.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_converters.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_cpuload.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_debugprint.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_dither.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_endianness.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_hostapi.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_memorybarrier.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_process.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_ringbuffer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_stream.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_trace.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_types.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\src\common\pa_util.h">
+      <Filter>common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="H:\Desktop\Music Projects\School\Jaar 2\RayTracedIR\RayTracedIR\Wouter\synht_conv_clean_sse\src\cpp_scripts\cmake-build-debug\_deps\port_audio-build\portaudio_cmake.def">
+      <Filter>cmake_generated</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cmake_generated">
+      <UniqueIdentifier>{21AEF454-7367-3A12-B13E-A85F43D86202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{EEDD4B31-3DFB-3691-9BD3-672F2598A397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi">
+      <UniqueIdentifier>{0EDFF1C0-F9C3-3F0C-9014-6C14E985E6D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi\dsound">
+      <UniqueIdentifier>{D80AAC31-1BBF-39AA-913C-4D44444D4797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi\skeleton">
+      <UniqueIdentifier>{E46662CD-C944-3FD5-974E-0D2131F872E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi\wasapi">
+      <UniqueIdentifier>{AC07415C-19B3-348C-8D04-D9005853EE83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi\wdmks">
+      <UniqueIdentifier>{3EDA64E2-3E95-3E8E-9D8A-9AD29B3EDE2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hostapi\wmme">
+      <UniqueIdentifier>{D6ACA46C-9100-3AAF-B455-AFFB6B0C03E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{1A852432-2593-35BF-89FC-A27BAF645535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{5223E7F0-D486-34D8-907C-1EEB57A35343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os\win">
+      <UniqueIdentifier>{8D6763FC-B512-3B91-8171-FA8AEAFCF858}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

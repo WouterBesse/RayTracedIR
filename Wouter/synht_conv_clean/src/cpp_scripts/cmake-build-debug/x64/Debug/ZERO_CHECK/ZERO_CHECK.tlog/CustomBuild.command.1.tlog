@@ -1,0 +1,10 @@
+^H:\DESKTOP\MUSIC PROJECTS\SCHOOL\JAAR 2\RAYTRACEDIR\RAYTRACEDIR\WOUTER\SYNHT_CONV_CLEAN\SRC\CPP_SCRIPTS\CMAKE-BUILD-DEBUG\CMAKEFILES\1A50103DA1F023F79E3A54C63837A523\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" "-SH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts" "-BH:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "H:/Desktop/Music Projects/School/Jaar 2/RayTracedIR/RayTracedIR/Wouter/synht_conv_clean/src/cpp_scripts/cmake-build-debug/WoutersClassKaas.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
