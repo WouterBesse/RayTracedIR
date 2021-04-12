@@ -16,6 +16,7 @@ public:
 
     int startVerb();
 
+
 //    double getSamples(int const, float const);
 
     struct TestCallback : public AudioIODeviceCallback {
@@ -41,8 +42,19 @@ public:
             for (auto i = 0; i < numSamples; ++i) {
                 ringbuffer1.push(0.91 * input[i * numChannels]);
                 auto SingleSample = ringbuffer1.getSamples(iDelays, fVolumes);
-                output[i * 2] = SingleSample / 8;
-                output[i * 2 + 1] = SingleSample / 8;
+                if(i % 2 == 0)
+                {
+                    output[i * 2] = SingleSample;
+
+                }
+                else
+                {
+                    output[i * 2 + 1] = SingleSample;
+
+                }
+
+
+
             }
         }
 
@@ -65,17 +77,15 @@ public:
             return DelayMultiplier;
         }
 
-        void setDelayList() {
-            float j = 1.0;
+        void setDelayList(int D[], float V[]) {
             for (int i = 0; i < numberOfDelays; i++) {
-                randList[i] = (10 + 2);
-                delayVal += randList[i] * i * DelayMultiplier;
-                iDelays[i] = (int) delayVal;
-                fVolumes[i] = j;
-                j = j * 0.97f;
-                //std::cout<<i<<"/n";
+                iDelays[i] = D[i];
+                fVolumes[i] = V[i];
+                std::cout<<"updatedelay: "<<fVolumes[i]<<"--- i: "<<i<<std::endl;
             }
         }
+
+
 
         void InitializeDelayList() {
             float j = 1.0;
@@ -91,7 +101,7 @@ public:
         //Initiate all values
         //ringbuffer
 
-        ringBuffer ringbuffer1{500000};
+        ringBuffer ringbuffer1{10000000};
         int SampleRate;
         double CurrentTimeS = 0.0;  //init start time in seconds
 
@@ -108,6 +118,7 @@ public:
 
     static void DisplayHelpInfo();
 
+
     void SetupAudio() const;
 
     void TeardownAudio() const;
@@ -117,6 +128,6 @@ public:
     TestCallback callback;
 
 
-
+    void updateDelayList(int *iDelays, float *fVolumes);
 };
 
