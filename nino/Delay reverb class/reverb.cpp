@@ -8,6 +8,8 @@ Reverb::Reverb() {
 
 Reverb::~Reverb()= default;
 
+
+
 int Reverb::startVerb() {
 
 
@@ -28,7 +30,6 @@ int Reverb::startVerb() {
             callback.remDelayMultiplier(0.0001);
         } else if (callback.getDelayMultiplier() != lastDelayMultiplier) {
             callback.setDelayVal(2.0);
-            callback.setDelayList();
         }
     }
     return 0;
@@ -61,4 +62,9 @@ void Reverb::DisplayHelpInfo() {
     std::cout << "\n\nPress 'q' when you want to quit the program." << std::endl;
     std::cout << "\n\nPress '1' to increase length." << std::endl;
     std::cout << "\n\nPress '2' to decrease length." << std::endl;
+}
+
+
+void Reverb::updateDelayList(int iDelays[], float fVolumes[]){
+    callback.setDelayList(iDelays,fVolumes);
 }
