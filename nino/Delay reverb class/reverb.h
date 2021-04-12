@@ -77,10 +77,10 @@ public:
             return DelayMultiplier;
         }
 
-        void setDelayList(int D[], float V[]) {
+        void setDelayList(int D[]) {
             for (int i = 0; i < numberOfDelays; i++) {
                 iDelays[i] = D[i];
-                fVolumes[i] = V[i];
+                fVolumes[i] = pow(0.9999,(float)D[i]);
                 std::cout<<"updatedelay: "<<fVolumes[i]<<"--- i: "<<i<<std::endl;
             }
         }
@@ -128,6 +128,6 @@ public:
     TestCallback callback;
 
 
-    void updateDelayList(int *iDelays, float *fVolumes);
+    void updateDelayList(int *iDelays);
 };
 

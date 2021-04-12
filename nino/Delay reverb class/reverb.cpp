@@ -65,6 +65,6 @@ void Reverb::DisplayHelpInfo() {
 }
 
 
-void Reverb::updateDelayList(int iDelays[], float fVolumes[]){
-    callback.setDelayList(iDelays,fVolumes);
+void Reverb::updateDelayList(int iDelays[]){
+    callback.setDelayList(iDelays);
 }

@@ -31,7 +31,7 @@ int main()
     std::thread reverbThread = std::thread(&Reverb::startVerb, ninoVerb);
     //ninoVerb.startVerb();
 
-    ninoVerb.updateDelayList(iDelays, fVolumes);
+    ninoVerb.updateDelayList(iDelays);
 
     reverbThread.join();
 
