@@ -1,9 +1,10 @@
 ﻿#include <iostream>
 #include "../headers/reverb.h"
 
-Reverb::Reverb() {
+Reverb::Reverb(int SR) {
     DisplayHelpInfo();
     portAudio = new PortAudio{callback};
+    sampleRate = SR;
 }
 
 Reverb::~Reverb()= default;
@@ -14,6 +15,7 @@ int Reverb::startVerb() {
     SetupAudio();
     DisplayHelpInfo();
     // keep the program running and listen for user input, q = quit
+
 
     while (true) {
         // live keyboard in
@@ -28,7 +30,7 @@ int Reverb::startVerb() {
             callback.remDelayMultiplier(0.0001);
         } else if (callback.getDelayMultiplier() != lastDelayMultiplier) {
             callback.setDelayVal(2.0);
-            callback.setDelayList();
+            //callback.InitializeDelayList();
         }
     }
     return 0;
@@ -49,7 +51,7 @@ void Reverb::TeardownAudio() const {
 void Reverb::SetupAudio() const {
 
     try {
-        portAudio->setup(44100, 128);
+        portAudio->setup(sampleRate, 128);
     }
     catch (std::runtime_error &e) {
         std::cerr << "error during startup: " << e.what() << std::endl;
@@ -61,4 +63,8 @@ void Reverb::DisplayHelpInfo() {
     std::cout << "\n\nPress 'q' when you want to quit the program." << std::endl;
     std::cout << "\n\nPress '1' to increase length." << std::endl;
     std::cout << "\n\nPress '2' to decrease length." << std::endl;
+}
+
+void Reverb::updateDelayList(std::vector<int> iDelays){
+    callback.setDelayList(iDelays);
 }
