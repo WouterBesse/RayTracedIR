@@ -17,28 +17,28 @@ int main(int argc, char const *argv[]) {
 
   // triangle1
   coordA.x = 0.0f;
-  coordA.y = 0.0f;
-  coordA.z = 4.0f;
+  coordA.y = 4.0f;
+  coordA.z = 0.0f;
   coordB.x = 1.5f;
-  coordB.y = 0.0f;
-  coordB.z = 4.0f;
+  coordB.y = 4.0f;
+  coordB.z = 0.0f;
   coordC.x = 0.0f;
-  coordC.y = 1.0f;
-  coordC.z = 4.0f;
+  coordC.y = 4.0f;
+  coordC.z = 1.0f;
 
 
   Plane triangle1(coordA, coordB, coordC);
 	scene.addPlane(&triangle1);
 
   coordA.x = 0.0f;
-  coordA.y = 0.0f;
-  coordA.z = 3.0f;
+  coordA.y = 3.0f;
+  coordA.z = 0.0f;
   coordB.x = -1.5f;
-  coordB.y = 0.0f;
-  coordB.z = 3.0f;
+  coordB.y = 3.0f;
+  coordB.z = 0.0f;
   coordC.x = 0.0f;
-  coordC.y = 1.0f;
-  coordC.z = 3.0f;
+  coordC.y = 3.0f;
+  coordC.z = 1.0f;
 
   Plane triangle2(coordA, coordB, coordC);
 	scene.addPlane(&triangle2);
@@ -51,36 +51,36 @@ int main(int argc, char const *argv[]) {
 
   //roomABCDEFGH
   coordA.x = 3.0f;
-  coordA.y = -3.0f;
-  coordA.z = -6.0f;
+  coordA.y = -6.0f;
+  coordA.z = -3.0f;
 
   coordB.x = -3.0f;
-  coordB.y = -3.0f;
-  coordB.z = -6.0f;
+  coordB.y = -6.0f;
+  coordB.z = -3.0f;
 
   coordC.x = -3.0f;
-  coordC.y = -3.0f;
-  coordC.z = 6.0f;
+  coordC.y = 6.0f;
+  coordC.z = -3.0f;
 
   coordD.x = 3.0f;
-  coordD.y = -3.0f;
-  coordD.z = 6.0f;
+  coordD.y = 6.0f;
+  coordD.z = -3.0f;
 
   coordE.x = 3.0f;
-  coordE.y = 3.0f;
-  coordE.z = -6.0f;
+  coordE.y = -6.0f;
+  coordE.z = 3.0f;
 
   coordF.x = -3.0f;
-  coordF.y = 3.0f;
-  coordF.z = -6.0f;
+  coordF.y = -6.0f;
+  coordF.z = 3.0f;
 
   coordG.x = -3.0f;
-  coordG.y = 3.0f;
-  coordG.z = 6.0f;
+  coordG.y = 6.0f;
+  coordG.z = 3.0f;
 
   coordH.x = 3.0f;
-  coordH.y = 3.0f;
-  coordH.z = 6.0f;
+  coordH.y = 6.0f;
+  coordH.z = 3.0f;
 
   Plane triangleABE(coordA, coordB, coordE);
   scene.addPlane(&triangleABE);

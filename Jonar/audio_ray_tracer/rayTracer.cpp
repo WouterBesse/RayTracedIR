@@ -242,7 +242,7 @@ void RayTracer::traceScene(ShapeSet* scene) {
   width = SCREEN_WIDTH;
   height = SCREEN_HEIGHT;
 
-  PerspectiveCamera camera(Point(0.0f, 0.0f, 0.0f), Vector(0.0f, 0.0f, 1.0f),
+  PerspectiveCamera camera(Point(0.0f, 0.0f, 0.0f), Vector(0.0f, 1.0f, 0.0f),
   Vector(), 25.0f * PI / 180.0f, (float)width / (float)height);
 
   rayTrace(&camera, scene);
