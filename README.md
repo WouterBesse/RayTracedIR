@@ -1,3 +1,23 @@
-**Ray Traced virtual impulse responses**
+#**WaveTracer**
+**A reverb generator based on ray tracing technologies by Nino Saglia, Jonar Verbart and Wouter M. Besse**
 
-Hey, here we are starting :)
+Welcome to our project, we've got many files around here. Some of them more interesting than the others.
+To find our final result, go to folder `Full Project`
+
+Most important files are makeable as a simple CMake project.
+We used the portaudio audio engine to run most of our work.
+
+In the WaveTracer you can move around in a 3D space. From your position, live ray tracing technology will be used to generate a delay list which will then be used by the reverb.
+
+##**Credits**
+Main dev team: Nino Saglia, Jonar Verbart and Wouter M. Besse
+Portaudio.h: Wouter Ensink
+3D Viewer game engine (modified by main dev team): One Lone Coder https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA
+Raytracer (vectormath): HillsoftCode https://www.youtube.com/c/HillsoftCode
+Raytracer (bouncing and fixing): Jonar Verbart, helped by Wouter and Nino
+Reverb: Nino Saglia, updated by Wouter Besse for CMake
+Merging and optimising everything: Wouter Besse helped by Nino and Jonar
+3D File: Wouter Besse :)
+
+Schematics can be found in doc folder of Full Project
+
