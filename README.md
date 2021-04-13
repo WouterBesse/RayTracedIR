@@ -8,6 +8,8 @@ A video of the project working can be found here: https://youtu.be/H8jKapgd9Y8
 
 Our rough time estimates worked on the project: https://docs.google.com/spreadsheets/d/1aqyhi3EMpJU0uY-e2qmfA5j6gm9AFmAYyT6BzSmTDYQ/edit?usp=sharing
 
+Trello board: https://trello.com/b/eQvugQIA/taken
+
 Most important files are makeable as a simple CMake project.
 We used the portaudio audio engine to run most of our work.
 
