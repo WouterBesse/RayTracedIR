@@ -10,7 +10,7 @@
 
 class Reverb {
 public:
-    Reverb();
+    Reverb(int);
 
     ~Reverb();
 
@@ -21,7 +21,7 @@ public:
     struct TestCallback : public AudioIODeviceCallback {
 
         TestCallback() {
-            numberOfDelays = 500;
+            numberOfDelays = 400;
             randList.reserve(numberOfDelays + 1);
             iDelays.reserve(numberOfDelays  + 1);
             fVolumes.reserve(numberOfDelays  + 1);
@@ -39,10 +39,11 @@ public:
 
         void process(float *input, float *output, int numSamples, int numChannels) override {
             for (auto i = 0; i < numSamples; ++i) {
-                ringbuffer1.push(0.91 * input[i * numChannels]);
+
+                ringbuffer1.push(0.1 * input[i * numChannels]);
                 auto SingleSample = ringbuffer1.getSamples(iDelays, fVolumes);
-                output[i * 2] = SingleSample / 8;
-                output[i * 2 + 1] = SingleSample / 8;
+                output[i * 2] = SingleSample;
+                output[i * 2 + 1] = SingleSample;
             }
         }
 
@@ -65,16 +66,14 @@ public:
             return DelayMultiplier;
         }
 
-        void setDelayList() {
-            float j = 1.0;
-            for (int i = 0; i < numberOfDelays; i++) {
-                randList[i] = (10 + 2);
-                delayVal += randList[i] * i * DelayMultiplier;
-                iDelays[i] = (int) delayVal;
-                fVolumes[i] = j;
-                j = j * 0.97f;
-                //std::cout<<i<<"/n";
+        void setDelayList(std::vector<int> D) {
+            for (int i = 0; i < D.size(); i++) {
+                iDelays[i] = D[i];
+                fVolumes[i] = pow(0.9999,(float)D[i]);
+                //std::cout<<"fvolumes: "<<fVolumes[i]<<" <---> D: "<<D[i]<<std::endl;
             }
+
+
         }
 
         void InitializeDelayList() {
@@ -105,7 +104,6 @@ public:
 
     PortAudio *portAudio;
 
-
     static void DisplayHelpInfo();
 
     void SetupAudio() const;
@@ -116,7 +114,9 @@ public:
 
     TestCallback callback;
 
+    void updateDelayList(std::vector<int>);
 
+    int sampleRate;
 
 };
 
