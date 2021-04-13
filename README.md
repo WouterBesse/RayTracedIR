@@ -1,4 +1,4 @@
-#**WaveTracer**
+# **WaveTracer**
 **A reverb generator based on ray tracing technologies by Nino Saglia, Jonar Verbart and Wouter M. Besse**
 
 Welcome to our project, we've got many files around here. Some of them more interesting than the others.
