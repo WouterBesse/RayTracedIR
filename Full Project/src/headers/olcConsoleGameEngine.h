@@ -127,7 +127,10 @@ Character Set -> Use Unicode. Thanks! For now, I'll try enabling it for you - Ja
 #include <thread>
 #include <atomic>
 #include <condition_variable>
-#include "./reverb.h"
+#include <fstream>
+#include <strstream>
+#include "reverb.h"
+#include "rayTracer.h"
 
 using namespace std;
 #define GL_GENERATE_MIPMAP                0x8191
@@ -136,6 +139,70 @@ using namespace std;
 typedef BOOL(WINAPI wglSwapInterval_t)(int interval);
 
 wglSwapInterval_t *wglSwapInterval;
+
+struct vec3d
+{
+    float x = 0;
+    float y = 0;
+    float z = 0;
+    float w = 1; // Need a 4th term to perform sensible matrix vector multiplication
+};
+
+struct triangle
+{
+    vec3d p[3];
+    wchar_t sym;
+    short col;
+};
+
+
+
+struct mat4x4
+{
+    float m[4][4] = { 0 };
+};
+
+struct mesh
+{
+    vector<triangle> tris;
+
+    bool LoadFromObjectFile(string sFilename)
+    {
+        ifstream f(sFilename);
+        if (!f.is_open())
+            return false;
+
+        // Local cache of verts
+        vector<vec3d> verts;
+
+
+        while (!f.eof())
+        {
+            char line[128];
+            f.getline(line, 128);
+
+            strstream s;
+            s << line;
+
+            char junk;
+
+            if (line[0] == 'v')
+            {
+                vec3d v;
+                s >> junk >> v.x >> v.y >> v.z;
+                verts.push_back(v);
+            }
+
+            if (line[0] == 'f')
+            {
+                int f[3];
+                s >> junk >> f[0] >> f[1] >> f[2];
+                tris.push_back({ verts[f[0] - 1], verts[f[1] - 1], verts[f[2] - 1] });
+            }
+        }
+        return true;
+    }
+};
 
 enum COLOUR {
     FG_BLACK = 0x0000,
@@ -1374,7 +1441,7 @@ class olcConsoleGameEngine {
     }
 
     HWND ConstructWindow(int width, int height) {
-        wchar_t wnd_title[] = L"OneLoneCoder.com - Console Game Engine (OGL)";
+        wchar_t wnd_title[] = L"WaveTracer ";
         wchar_t wnd_class[] = L"OLC_CONSOLE_GAME_ENGINE_CLASS";
 
         HINSTANCE hInstance = GetModuleHandle(NULL);
@@ -1409,6 +1476,11 @@ class olcConsoleGameEngine {
     }
 
 public:
+
+    RayTracer *rayTracer;
+    Reverb *ninoVerb;
+    ShapeSet *scene;
+
     olcConsoleGameEngine() {
         m_nScreenWidth = 80;
         m_nScreenHeight = 30;
@@ -1423,7 +1495,7 @@ public:
 
         m_sAppName = L"Default";
 
-        //grab 1 GB or memory
+        //grab 1 GB of memory
         m_bufMemory = (uint8_t *) VirtualAlloc(NULL, 1024 * 1024 * 1024, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
         if (!m_bufMemory) throw exception("No Memory!");
 
@@ -1958,7 +2030,199 @@ public:
     }
 
 public:
-    void Start() {
+
+    mesh meshCube;
+    mesh rayCube;
+    vec3d vCamera;	// Location of camera in world space
+    vec3d vLookDir;	// Direction vector along the direction camera points
+    mat4x4 matProj;	// Matrix that converts from view space to screen space
+
+    vec3d Matrix_MultiplyVector(mat4x4 &m, vec3d &i)
+    {
+        vec3d v;
+        v.x = i.x * m.m[0][0] + i.y * m.m[1][0] + i.z * m.m[2][0] + i.w * m.m[3][0];
+        v.y = i.x * m.m[0][1] + i.y * m.m[1][1] + i.z * m.m[2][1] + i.w * m.m[3][1];
+        v.z = i.x * m.m[0][2] + i.y * m.m[1][2] + i.z * m.m[2][2] + i.w * m.m[3][2];
+        v.w = i.x * m.m[0][3] + i.y * m.m[1][3] + i.z * m.m[2][3] + i.w * m.m[3][3];
+        return v;
+    }
+
+    mat4x4 Matrix_MakeIdentity()
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = 1.0f;
+        matrix.m[1][1] = 1.0f;
+        matrix.m[2][2] = 1.0f;
+        matrix.m[3][3] = 1.0f;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MakeRotationX(float fAngleRad)
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = 1.0f;
+        matrix.m[1][1] = cosf(fAngleRad);
+        matrix.m[1][2] = sinf(fAngleRad);
+        matrix.m[2][1] = -sinf(fAngleRad);
+        matrix.m[2][2] = cosf(fAngleRad);
+        matrix.m[3][3] = 1.0f;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MakeRotationY(float fAngleRad)
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = cosf(fAngleRad);
+        matrix.m[0][2] = sinf(fAngleRad);
+        matrix.m[2][0] = -sinf(fAngleRad);
+        matrix.m[1][1] = 1.0f;
+        matrix.m[2][2] = cosf(fAngleRad);
+        matrix.m[3][3] = 1.0f;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MakeRotationZ(float fAngleRad)
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = cosf(fAngleRad);
+        matrix.m[0][1] = sinf(fAngleRad);
+        matrix.m[1][0] = -sinf(fAngleRad);
+        matrix.m[1][1] = cosf(fAngleRad);
+        matrix.m[2][2] = 1.0f;
+        matrix.m[3][3] = 1.0f;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MakeTranslation(float x, float y, float z)
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = 1.0f;
+        matrix.m[1][1] = 1.0f;
+        matrix.m[2][2] = 1.0f;
+        matrix.m[3][3] = 1.0f;
+        matrix.m[3][0] = x;
+        matrix.m[3][1] = y;
+        matrix.m[3][2] = z;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MakeProjection(float fFovDegrees, float fAspectRatio, float fNear, float fFar)
+    {
+        float fFovRad = 1.0f / tanf(fFovDegrees * 0.5f / 180.0f * 3.14159f);
+        mat4x4 matrix;
+        matrix.m[0][0] = fAspectRatio * fFovRad;
+        matrix.m[1][1] = fFovRad;
+        matrix.m[2][2] = fFar / (fFar - fNear);
+        matrix.m[3][2] = (-fFar * fNear) / (fFar - fNear);
+        matrix.m[2][3] = 1.0f;
+        matrix.m[3][3] = 0.0f;
+        return matrix;
+    }
+
+    mat4x4 Matrix_MultiplyMatrix(mat4x4 &m1, mat4x4 &m2)
+    {
+        mat4x4 matrix;
+        for (int c = 0; c < 4; c++)
+            for (int r = 0; r < 4; r++)
+                matrix.m[r][c] = m1.m[r][0] * m2.m[0][c] + m1.m[r][1] * m2.m[1][c] + m1.m[r][2] * m2.m[2][c] + m1.m[r][3] * m2.m[3][c];
+        return matrix;
+    }
+
+    mat4x4 Matrix_PointAt(vec3d &pos, vec3d &target, vec3d &up)
+    {
+        // Calculate new forward direction
+        vec3d newForward = Vector_Sub(target, pos);
+        newForward = Vector_Normalise(newForward);
+
+        // Calculate new Up direction
+        vec3d a = Vector_Mul(newForward, Vector_DotProduct(up, newForward));
+        vec3d newUp = Vector_Sub(up, a);
+        newUp = Vector_Normalise(newUp);
+
+        // New Right direction is easy, its just cross product
+        vec3d newRight = Vector_CrossProduct(newUp, newForward);
+
+        // Construct Dimensioning and Translation Matrix
+        mat4x4 matrix;
+        matrix.m[0][0] = newRight.x;	matrix.m[0][1] = newRight.y;	matrix.m[0][2] = newRight.z;	matrix.m[0][3] = 0.0f;
+        matrix.m[1][0] = newUp.x;		matrix.m[1][1] = newUp.y;		matrix.m[1][2] = newUp.z;		matrix.m[1][3] = 0.0f;
+        matrix.m[2][0] = newForward.x;	matrix.m[2][1] = newForward.y;	matrix.m[2][2] = newForward.z;	matrix.m[2][3] = 0.0f;
+        matrix.m[3][0] = pos.x;			matrix.m[3][1] = pos.y;			matrix.m[3][2] = pos.z;			matrix.m[3][3] = 1.0f;
+        return matrix;
+
+    }
+
+    mat4x4 Matrix_QuickInverse(mat4x4 &m) // Only for Rotation/Translation Matrices
+    {
+        mat4x4 matrix;
+        matrix.m[0][0] = m.m[0][0]; matrix.m[0][1] = m.m[1][0]; matrix.m[0][2] = m.m[2][0]; matrix.m[0][3] = 0.0f;
+        matrix.m[1][0] = m.m[0][1]; matrix.m[1][1] = m.m[1][1]; matrix.m[1][2] = m.m[2][1]; matrix.m[1][3] = 0.0f;
+        matrix.m[2][0] = m.m[0][2]; matrix.m[2][1] = m.m[1][2]; matrix.m[2][2] = m.m[2][2]; matrix.m[2][3] = 0.0f;
+        matrix.m[3][0] = -(m.m[3][0] * matrix.m[0][0] + m.m[3][1] * matrix.m[1][0] + m.m[3][2] * matrix.m[2][0]);
+        matrix.m[3][1] = -(m.m[3][0] * matrix.m[0][1] + m.m[3][1] * matrix.m[1][1] + m.m[3][2] * matrix.m[2][1]);
+        matrix.m[3][2] = -(m.m[3][0] * matrix.m[0][2] + m.m[3][1] * matrix.m[1][2] + m.m[3][2] * matrix.m[2][2]);
+        matrix.m[3][3] = 1.0f;
+        return matrix;
+    }
+
+    vec3d Vector_Add(vec3d &v1, vec3d &v2)
+    {
+        return { v1.x + v2.x, v1.y + v2.y, v1.z + v2.z };
+    }
+
+    vec3d Vector_Sub(vec3d &v1, vec3d &v2)
+    {
+        return { v1.x - v2.x, v1.y - v2.y, v1.z - v2.z };
+    }
+
+    vec3d Vector_Mul(vec3d &v1, float k)
+    {
+        return { v1.x * k, v1.y * k, v1.z * k };
+    }
+
+    vec3d Vector_Div(vec3d &v1, float k)
+    {
+        return { v1.x / k, v1.y / k, v1.z / k };
+    }
+
+    float Vector_DotProduct(vec3d &v1, vec3d &v2)
+    {
+        return v1.x*v2.x + v1.y*v2.y + v1.z * v2.z;
+    }
+
+    float Vector_Length(vec3d &v)
+    {
+        return sqrtf(Vector_DotProduct(v, v));
+    }
+
+    vec3d Vector_Normalise(vec3d &v)
+    {
+        float l = Vector_Length(v);
+        return { v.x / l, v.y / l, v.z / l };
+    }
+
+    vec3d Vector_CrossProduct(vec3d &v1, vec3d &v2)
+    {
+        vec3d v;
+        v.x = v1.y * v2.z - v1.z * v2.y;
+        v.y = v1.z * v2.x - v1.x * v2.z;
+        v.z = v1.x * v2.y - v1.y * v2.x;
+        return v;
+    }
+
+    vec3d Vector_IntersectPlane(vec3d &plane_p, vec3d &plane_n, vec3d &lineStart, vec3d &lineEnd)
+    {
+        plane_n = Vector_Normalise(plane_n);
+        float plane_d = -Vector_DotProduct(plane_n, plane_p);
+        float ad = Vector_DotProduct(lineStart, plane_n);
+        float bd = Vector_DotProduct(lineEnd, plane_n);
+        float t = (-plane_d - ad) / (bd - ad);
+        vec3d lineStartToEnd = Vector_Sub(lineEnd, lineStart);
+        vec3d lineToIntersect = Vector_Mul(lineStartToEnd, t);
+        return Vector_Add(lineStart, lineToIntersect);
+    }
+
+    void Start(int SR) {
         m_bAtomActive = true;
 
         m_hWnd = ConstructWindow(m_nWindowWidth, m_nWindowHeight);
@@ -2043,11 +2307,181 @@ public:
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
         wglMakeCurrent(NULL, NULL);
 
+
+
+
+        // Local cache of verts and faces
+        std::vector<std::vector<float>> vertices;
+        std::vector<std::vector<int>> faces;
+
+        // Possible future code for importing obj files for ray tracing
+//        std::ifstream f("NewSoundRay4.obj");
+//        if (!f.is_open())
+//            std::cout << "komijnen kaas" << std::endl;
+//            return;
+//
+//        while (!f.eof())
+//        {
+//            char line[128];
+//            f.getline(line, 128);
+//
+//            std::strstream s;
+//            s << line;
+//
+//            char junk;
+//
+//            if (line[0] == 'v')
+//            {
+//                std::vector<float> v;
+//                s >> junk >> v[0] >> v[1] >> v[2];
+//                std::cout << v[0];
+//                vertices.push_back(v);
+//            }
+//
+//            if (line[0] == 'f')
+//            {
+//                std::vector<int> f;
+//                s >> junk >> f[0] >> f[1] >> f[2];
+//                faces.push_back(f);
+//
+//            }
+//        }
+//        //rayCube.LoadFromObjectFile("NewSoundRay3.obj");
+//
+//
+//        scene = new ShapeSet{};
+//        for (int i = 0; i < faces.size(); i ++) {
+//            Point coordA;
+//            Point coordB;
+//            Point coordC;
+//
+//
+//            coordA.x = vertices[faces[i][0] - 1][0];
+//            coordA.y = vertices[faces[i][0] - 1][1];
+//            coordA.z = vertices[faces[i][0] - 1][2];
+//
+//            coordB.x = vertices[faces[i][1] - 1][0];
+//            coordB.y = vertices[faces[i][1] - 1][1];
+//            coordB.z = vertices[faces[i][1] - 1][2];
+//
+//            coordC.x = vertices[faces[i][2] - 1][0];
+//            coordC.y = vertices[faces[i][2] - 1][1];
+//            coordC.z = vertices[faces[i][2] - 1][2];
+//            Plane triangles(coordA, coordB, coordC);
+//            scene->addPlane(&triangles);
+//        }
+        scene = new ShapeSet{};
+        // hardcoded test scene data, to be replaced with blender import function
+        Point coordA;
+        Point coordB;
+        Point coordC;
+
+        // triangle1
+        coordA.x = 0.0f;
+        coordA.y = 4.0f;
+        coordA.z = 0.0f;
+        coordB.x = 1.5f;
+        coordB.y = 4.0f;
+        coordB.z = 0.0f;
+        coordC.x = 0.0f;
+        coordC.y = 4.0f;
+        coordC.z = 1.0f;
+
+
+        Plane triangle1(coordA, coordB, coordC);
+        scene->addPlane(&triangle1);
+
+        coordA.x = 0.0f;
+        coordA.y = 3.0f;
+        coordA.z = 0.0f;
+        coordB.x = -1.5f;
+        coordB.y = 3.0f;
+        coordB.z = 0.0f;
+        coordC.x = 0.0f;
+        coordC.y = 3.0f;
+        coordC.z = 1.0f;
+
+        Plane triangle2(coordA, coordB, coordC);
+        scene->addPlane(&triangle2);
+
+        Point coordD;
+        Point coordE;
+        Point coordF;
+        Point coordG;
+        Point coordH;
+
+        //roomABCDEFGH
+        coordA.x = 3.0f;
+        coordA.y = -6.0f;
+        coordA.z = -3.0f;
+
+        coordB.x = -3.0f;
+        coordB.y = -6.0f;
+        coordB.z = -3.0f;
+
+        coordC.x = -3.0f;
+        coordC.y = 6.0f;
+        coordC.z = -3.0f;
+
+        coordD.x = 3.0f;
+        coordD.y = 6.0f;
+        coordD.z = -3.0f;
+
+        coordE.x = 3.0f;
+        coordE.y = -6.0f;
+        coordE.z = 3.0f;
+
+        coordF.x = -3.0f;
+        coordF.y = -6.0f;
+        coordF.z = 3.0f;
+
+        coordG.x = -3.0f;
+        coordG.y = 6.0f;
+        coordG.z = 3.0f;
+
+        coordH.x = 3.0f;
+        coordH.y = 6.0f;
+        coordH.z = 3.0f;
+
+        Plane triangleABE(coordA, coordB, coordE);
+        scene->addPlane(&triangleABE);
+        Plane triangleBFE(coordB, coordF, coordE);
+        scene->addPlane(&triangleBFE);
+
+        Plane triangleDCH(coordD, coordC, coordH);
+        scene->addPlane(&triangleDCH);
+        Plane triangleCGH(coordC, coordG, coordH);
+        scene->addPlane(&triangleCGH);
+
+        Plane triangleBCG(coordB, coordC, coordG);
+        scene->addPlane(&triangleBCG);
+        Plane triangleBGF(coordB, coordG, coordF);
+        scene->addPlane(&triangleBGF);
+
+        Plane triangleADH(coordA, coordD, coordH);
+        scene->addPlane(&triangleADH);
+        Plane triangleAHE(coordA, coordH, coordE);
+        scene->addPlane(&triangleAHE);
+
+        Plane triangleABD(coordA, coordB, coordD);
+        scene->addPlane(&triangleABD);
+        Plane triangleBCD(coordB, coordC, coordD);
+        scene->addPlane(&triangleBCD);
+
+        Plane triangleFGH(coordF, coordG, coordH);
+        scene->addPlane(&triangleFGH);
+        Plane triangleEFH(coordE, coordF, coordH);
+        scene->addPlane(&triangleEFH);
+        // end of hardcoded test scene data
+
+        rayTracer = new RayTracer{SR};
+        ninoVerb = new Reverb{SR};
+
+
         // Start the game thread
         thread t = thread(&olcConsoleGameEngine::GameThread, this);
 
         // Start the reverb thread
-        Reverb ninoVerb;
         thread reverbThread = thread(&Reverb::startVerb, ninoVerb);
 
         MSG msg;
@@ -2103,9 +2537,13 @@ private:
         while (m_bAtomActive) {
             // Run as fast as possible
             while (m_bAtomActive) {
+
                 QueryPerformanceCounter(&timeNew);
                 float fElapsedTime = (float) ((timeNew.QuadPart - timeOld.QuadPart) / (double) timeFreq.QuadPart);
                 timeOld = timeNew;
+                rayTracer->traceScene(scene, vCamera.x, vCamera.y, vCamera.z);
+                ninoVerb->updateDelayList(rayTracer->getRaySum());
+
 
                 for (int i = 0; i < 256; i++) {
                     m_keyNewState[i] = GetAsyncKeyState(i) >> 15;
@@ -2240,7 +2678,11 @@ private:
                 SetWindowText(m_hWnd, sNewTitle);
 
                 SwapBuffers(m_hDevCtx);
+
+
             }
+
+
 
             if (m_bEnableSound) {
                 // Close and Clean up audio system
@@ -2259,8 +2701,15 @@ private:
     }
 
 public:
-    // User MUST OVERRIDE THESE!!
-    virtual bool OnUserCreate() = 0;
+    bool OnUserCreate()
+    {
+        // Load object file
+        meshCube.LoadFromObjectFile("NewSoundRay3.obj");
+
+        // Projection Matrix
+        matProj = Matrix_MakeProjection(70.0f, (float)ScreenHeight() / (float)ScreenWidth(), 0.1f, 1000.0f);
+        return true;
+    }
 
     virtual bool OnUserUpdate(float fElapsedTime) = 0;
 
