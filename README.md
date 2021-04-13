@@ -4,6 +4,8 @@
 Welcome to our project, we've got many files around here. Some of them more interesting than the others.
 To find our final result, go to folder `Full Project`
 
+A video of the project working can be found here: https://youtu.be/H8jKapgd9Y8
+
 Most important files are makeable as a simple CMake project.
 We used the portaudio audio engine to run most of our work.
 
