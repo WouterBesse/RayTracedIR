@@ -6,8 +6,6 @@
 #include "./ringbuffer.h"
 
 
-
-
 class Reverb {
 public:
     Reverb(int);
@@ -16,15 +14,13 @@ public:
 
     int startVerb();
 
-//    double getSamples(int const, float const);
-
     struct TestCallback : public AudioIODeviceCallback {
 
         TestCallback() {
             numberOfDelays = 400;
             randList.reserve(numberOfDelays + 1);
-            iDelays.reserve(numberOfDelays  + 1);
-            fVolumes.reserve(numberOfDelays  + 1);
+            iDelays.reserve(numberOfDelays + 1);
+            fVolumes.reserve(numberOfDelays + 1);
             DelayMultiplier = 0.1;
             delayVal = 2.0;
             InitializeDelayList();
@@ -47,21 +43,21 @@ public:
             }
         }
 
-        float addDelayMultiplier(float NewDM){
+        float addDelayMultiplier(float NewDM) {
             DelayMultiplier += NewDM;
             return DelayMultiplier;
         }
 
-        [[nodiscard]] float getDelayMultiplier() const{
+        [[nodiscard]] float getDelayMultiplier() const {
             return DelayMultiplier;
         }
 
-        float remDelayMultiplier(float NewDM){
+        float remDelayMultiplier(float NewDM) {
             DelayMultiplier -= NewDM;
             return DelayMultiplier;
         }
 
-        float setDelayVal(float NewDV){
+        float setDelayVal(float NewDV) {
             delayVal = NewDV;
             return DelayMultiplier;
         }
@@ -69,8 +65,7 @@ public:
         void setDelayList(std::vector<int> D) {
             for (int i = 0; i < D.size(); i++) {
                 iDelays[i] = D[i];
-                fVolumes[i] = pow(0.9999,(float)D[i]);
-                //std::cout<<"fvolumes: "<<fVolumes[i]<<" <---> D: "<<D[i]<<std::endl;
+                fVolumes[i] = pow(0.9999, (float) D[i]);
             }
 
 
@@ -87,17 +82,14 @@ public:
             }
         }
 
-        //Initiate all values
-        //ringbuffer
-
         ringBuffer ringbuffer1{500000};
         int SampleRate;
         double CurrentTimeS = 0.0;  //init start time in seconds
 
         int numberOfDelays;
-        std::vector<int>randList;
-        std::vector<int>iDelays;
-        std::vector<float>fVolumes;
+        std::vector<int> randList;
+        std::vector<int> iDelays;
+        std::vector<float> fVolumes;
         float DelayMultiplier;
         float delayVal;
     };
