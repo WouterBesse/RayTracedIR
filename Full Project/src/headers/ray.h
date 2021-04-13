@@ -12,27 +12,29 @@
 
 struct Ray {
 
-  Point origin;
-  Vector direction;
-  float tMax;
+    Point origin;
+    Vector direction;
+    float tMax;
 
-  Ray(const Point& origin, const Vector& direction, float tMax = RAY_T_MAX);
-  virtual ~Ray();
+    Ray(const Point &origin, const Vector &direction, float tMax = RAY_T_MAX);
+
+    virtual ~Ray();
 };
 
 class Plane;
 
 struct Intersection {
-  Ray ray;
-  float t;
-  Plane *aPlane;
-  Point pointOfIntersect;
-  Vector normalAtPOI;
+    Ray ray;
+    float t;
+    Plane *aPlane;
+    Point pointOfIntersect;
+    Vector normalAtPOI;
 
-  Intersection(const Ray& ray);
-  virtual ~Intersection();
+    Intersection(const Ray &ray);
 
-  bool intersectedPlane() const;
+    virtual ~Intersection();
+
+    bool intersectedPlane() const;
 };
 
 #endif // RAY_H
