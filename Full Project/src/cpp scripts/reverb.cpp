@@ -7,7 +7,7 @@ Reverb::Reverb(int SR) {
     sampleRate = SR;
 }
 
-Reverb::~Reverb()= default;
+Reverb::~Reverb() = default;
 
 int Reverb::startVerb() {
 
@@ -65,6 +65,6 @@ void Reverb::DisplayHelpInfo() {
     std::cout << "\n\nPress '2' to decrease length." << std::endl;
 }
 
-void Reverb::updateDelayList(std::vector<int> iDelays){
+void Reverb::updateDelayList(std::vector<int> iDelays) {
     callback.setDelayList(iDelays);
 }

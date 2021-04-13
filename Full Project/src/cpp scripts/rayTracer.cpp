@@ -14,7 +14,7 @@ RayTracer::RayTracer(int SR) {
 RayTracer::~RayTracer() {
 }
 
-void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
+void RayTracer::rayTrace(Camera *camera, ShapeSet *scene) {
     const int bounceCount = 3; // make >= 1
 
     // Data saver to prevent writing large files over and over
@@ -27,13 +27,11 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     TracedRay tracedRay;
     std::vector<TracedRay> tracedRays[bounceCount + 1];
 
-    //std::cout << '\n' << "Casting rays..." << '\n';
-
     // Make primary rays using screen coordinates and camera, create intersection
     // of ray and scene, then store the data in tracedRays
     for (int x = 0; x < width; x++) {
         for (int y = 0; y < height; y++) {
-            Vector2 screenCoord((2.0f*x) / width - 1.0f, (-2.0f*y) / height + 1.0f);
+            Vector2 screenCoord((2.0f * x) / width - 1.0f, (-2.0f * y) / height + 1.0f);
             Ray ray = camera->makeRay(screenCoord);
             Intersection intersection(ray);
             if (scene->intersect(intersection)) {
@@ -119,7 +117,7 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
             }
         }
 
-        FILE* pgmimg;
+        FILE *pgmimg;
         pgmimg = fopen("pgmimg.pgm", "wb");
         // Writing Magic Number to the File
         fprintf(pgmimg, "P2\n");
@@ -148,9 +146,8 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     float summedDistance;
 
     // Recursive bouncing
-    //std::cout << '\n' << "Tracing rays..." << '\n';
     std::cout << tracedRays[0][40].rayOrigin.y << std::endl;
-    for (int i = 0; i < bounceCount; i ++) {
+    for (int i = 0; i < bounceCount; i++) {
         for (int j = 0; j < tracedRays[i].size(); j++) {
             if (tracedRays[i][j].rayInBounds != 0) {
                 summedDistance = tracedRays[i][j].summedDistance;
@@ -170,20 +167,21 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
                     tracedRay.rayOrigin = ray.origin;
                     tracedRay.rayDirection = ray.direction;
                     tracedRay.planeNormal = intersection.normalAtPOI;
-                    tracedRays[i+1].push_back(tracedRay);
+                    tracedRays[i + 1].push_back(tracedRay);
                 } else {
                     tracedRay.rayInBounds = false;
-                    tracedRays[i+1].push_back(tracedRay);
+                    tracedRays[i + 1].push_back(tracedRay);
                 }
             } else {
                 tracedRay.rayInBounds = false;
-                tracedRays[i+1].push_back(tracedRay);
+                tracedRays[i + 1].push_back(tracedRay);
             }
         }
     }
     // Make a ray returning from the last bounce to the listener/camera and store
     // total distances of bounced rays in a vector
-    std::cout << "X: " << tracedRays[0][5].rayOrigin.x << ", Y: " << tracedRays[0][5].rayOrigin.y << ", Z: " << tracedRays[0][5].rayOrigin.z << std::endl;
+    std::cout << "X: " << tracedRays[0][5].rayOrigin.x << ", Y: " << tracedRays[0][5].rayOrigin.y << ", Z: "
+              << tracedRays[0][5].rayOrigin.z << std::endl;
     for (int i = 0; i < bounceCount; i++) {
         for (int j = 0; j < tracedRays[i].size(); j++) {
             if (tracedRays[i][j].rayInBounds) {
@@ -202,8 +200,8 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
         tempSummedD.clear();
     }
 
+    // Reset delayTimeSamples and create a 2D vector with lengths from all bounces
     delayTimesSamples.clear();
-    //std::cout << raySummedDistances[40] << std::endl;
     for (int i = 0; i < raySummedDistances.size(); i++) {
         for (int b = 0; b < raySummedDistances[i].size(); b++) {
             // Transform distances to delay time in number of samples
@@ -213,8 +211,8 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
         }
     }
 
-    //std::cout << delayTimesSamples[40] << std::endl;
 
+    // Ugly comments, but still kept because it works on the PC of Jonar but not on Wouters' PC
     if (dataSaver == 0 || dataSaver == 2) { // program- and high level debugging
         // Write the total distances to a file, spaced by '\n'
 //        std::ofstream totalRayDistanceDataN;
@@ -238,7 +236,7 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
 //        totalRayDistanceDataC.close();
 //       // std::cout << "---totalRayDistanceDataC.txt file written---" << '\n';
     }
-    if(dataSaver == 1 || dataSaver == 2) { // low and high level debugging
+    if (dataSaver == 1 || dataSaver == 2) { // low and high level debugging
         // Write a single ray's journey to a file
         std::ofstream bounceData;
         bounceData.open("bounceData.txt");
@@ -261,15 +259,14 @@ void RayTracer::rayTrace(Camera* camera, ShapeSet* scene) {
     }
 }
 
-void RayTracer::traceScene(ShapeSet* scene, float camX, float camY, float camZ) {
+void RayTracer::traceScene(ShapeSet *scene, float camX, float camY, float camZ) {
     raySummedDistances.clear();
 
     width = SCREEN_WIDTH;
     height = SCREEN_HEIGHT;
-//    std::cout << width << std::endl;
 
     PerspectiveCamera camera(Point(camX, camZ, camY), Vector(0.0f, 1.0f, 0.0f),
-                             Vector(), 75.0f * PI / 180.0f, (float)width / (float)height);
+                             Vector(), 75.0f * PI / 180.0f, (float) width / (float) height);
     rayTrace(&camera, scene);
 }
 

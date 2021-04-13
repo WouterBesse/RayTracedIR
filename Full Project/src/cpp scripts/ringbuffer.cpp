@@ -1,6 +1,5 @@
 #include "../headers/ringbuffer.h"
 
-//constructor and destructor
 ringBuffer::ringBuffer(int length) {
     this->length = length;
 
@@ -20,10 +19,9 @@ void ringBuffer::push(double dInput) {
 
 }
 
-double ringBuffer::getSamples(std::vector<int>iDelays, std::vector<float>fVolumes) {
+double ringBuffer::getSamples(std::vector<int> iDelays, std::vector<float> fVolumes) {
     out = 0.0;
     int size = iDelays.size() - 3;
-    //std::cout<<"size is:"<<size;
     for (int i = 0; i <= size; i++) {
         out += fVolumes[i] * ringBuf[(iRingBuf + length - iDelays[i + (i % 2) + (iRingBuf % 2)] % length) % length];
     }
